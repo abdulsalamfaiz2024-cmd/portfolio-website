@@ -1,0 +1,152 @@
+[Abdulsalam Al-AshwalData Analyst & Data Engineer](http://localhost:3001/en)
+[About](http://localhost:3001/en#about)
+[Experience](http://localhost:3001/en#experience)
+[In Action](http://localhost:3001/en#gallery)
+[Projects](http://localhost:3001/en#projects)
+[Credentials](http://localhost:3001/en#credentials)
+[Contact](http://localhost:3001/en#contact)
+[العربية](http://localhost:3001/ar)
+[Resume](https://docs.google.com/document/d/1_60PXV36kQXuV6iV7DallXcCXzUeusS0/edit?usp=sharing&ouid=108021023890119107053&rtpof=true&sd=true)
+[العربية](http://localhost:3001/ar)
+Data Analyst & Data Engineer
+
+# Data Analyst — engineering solutions for clearer business insights
+
+Data Analyst with extensive experience in data engineering and automation, specializing in performance evaluation across commercial sales and humanitarian projects. Skilled in defining KPIs, building robust data pipelines, and automating complex reporting workflows. Proficient in Python, SQL, Power BI, and SAP ERP, with a proven track record of applying data-driven solutions and practical AI tools to optimize operations and support executive decision-making.
+[Download Resume](https://docs.google.com/document/d/1_60PXV36kQXuV6iV7DallXcCXzUeusS0/edit?usp=sharing&ouid=108021023890119107053&rtpof=true&sd=true)
+[Get in Touch](http://localhost:3001#contact)
+
+### Data Engineering
+Robust ETL pipelines, SAP ERP data extraction, warehouse architecture, and automated data workflows using Python and SQL.
+
+### Business Intelligence
+Power BI & Tableau dashboards, KPI frameworks, executive reporting, and performance evaluation systems.
+
+### M&E & Humanitarian Data
+Results-Oriented Monitoring (ROM) frameworks, UNOPS project data, and cross-sector impact analytics.
+
+### AI & Automation
+Open-source AI models, NLP pipelines, intelligent document processing, and workflow automation saving 8–12 hours weekly.
+
+## Experience
+
+Roles spanning enterprise analytics, humanitarian monitoring, and business consulting.
+Jan 2026 — Present
+Jan 2026 — Present
+
+### Data Analyst & Engineer Trainee
+Hayel Saeed Anam (HSA) Group · Yemen
+Building automated sales analytics infrastructure and executive reporting systems for one of the largest conglomerates in the Middle East. Extracting and transforming complex SAP ERP datasets to drive performance tracking across commercial operations.
+30–40%Reporting efficiency improvement
+8–12 hrsSaved per week via automation
+SAP ERPEnterprise data extraction
+Jan 2025 — Dec 2025
+Jan 2025 — Dec 2025
+
+### Monitoring & Evaluation (M&E) Assistant
+Tamdeen Youth Foundation · Yemen
+Implemented Results-Oriented Monitoring (ROM) frameworks for large-scale humanitarian projects. Designed automated data cleaning and validation pipelines to ensure high-quality reporting for donors and programme stakeholders.
+20–30%Increase in reporting accuracy
+ROMFrameworks implemented
+3+Large-scale projects monitored
+Jun 2024 — Dec 2024
+Jun 2024 — Dec 2024
+
+### Business Analyst
+Triple Nexus Strategic Company (TNSC) · Yemen
+Designed and deployed business intelligence dashboards enhancing visibility into core operational metrics. Supported executive decision-making through structured data analysis and reporting architecture.
+25%Operational reporting efficiency gain
+KPIFrameworks designed
+BIDashboards deployed
+
+## In Action
+
+Moments from presentations, research, and the journey behind the data.
+Internship Placement — HSA Group
+Research Hypotheses Presentation
+After Hours
+
+### Engineering Data & AI
+A collection of platforms, pipelines, and dashboards that solve complex problems and drive measurable impact.
+Cloud Analytics Platform
+
+### AI-Powered Data Analysis Platform
+The Challenge: Build a professional-grade cloud platform for comprehensive data analysis, interactive visualization, and fully automated reporting — eliminating manual analyst overhead.
+The Solution: Architected an in-memory SaaS engine with real-time data processing, AI-driven natural language querying, interactive chart generation, and automated PDF report export. Built with Next.js, Python, Redis, and Gemini AI.
+70%
+Reduction in analysis time
+<50ms
+Average query response
+[Explore Case Study](http://localhost:3001/projects/phonixpro)
+AI Automation
+
+### Podcast AI-ETL Pipeline
+The Challenge: Automate the ingestion of large video files, converting hours of footage into precise, searchable, and timestamped text using a hybrid local + cloud AI architecture.
+The Solution: Built a Python application leveraging open-source AI speech-to-text models for accurate transcription, with post-processing NLP for speaker identification and topic segmentation.
+80%+
+Processing time saved
+AI
+Automated transcription
+[Explore Case Study](http://localhost:3001/projects/podcast-etl)
+Humanitarian Analytics
+
+### Real-Time Country Dashboard
+The Challenge: Consolidate fragmented multi-sector data — economy, health, weather — into a centralized real-time dashboard for strategic decision-making across Yemen.
+The Solution: Designed automated ETL pipelines to ingest data from multiple APIs and public sources, with interactive Power BI dashboards featuring drill-down capabilities and row-level security for multi-stakeholder access.
+5+
+Data sectors integrated
+Real-time
+Dashboard updates
+[Explore Case Study](http://localhost:3001/projects/yemen-nexus)
+Data Engineering
+
+### Enterprise Database Architecture
+The Challenge: Transform unorganized spreadsheets into a scalable, reliable relational database infrastructure for enterprise business operations at TNSC.
+The Solution: Architected a normalized relational database schema with proper entity relationships, data integrity constraints, and migration scripts. Replaced ad-hoc Excel workflows with structured SQL-based data access and reporting.
+100%
+Data centralization
+Scalable
+Enterprise-ready architecture
+
+## Credentials
+
+Certifications, education, and the tools I work with daily.
+
+### Certifications
+IBM Data Engineering Specialization
+IBM — Coursera · 16-course program · [Verify ↗](https://coursera.org/share/b92252a31c9217759bbdb98be201608e)
+Implement ETL & Data Pipelines with Bash, Airflow & Kafka; architect, populate, deploy Data Warehouses; create BI reports & interactive dashboards.
+Advanced Business Analytics Specialization
+University of Colorado — Coursera · 5-course program · [Verify ↗](https://coursera.org/verify/specialization/SS7MCGLM9B92)
+Developed proficiency in predictive modeling, business decision analytics, and report execution.
+Modern Big Data Analysis with SQL Specialization
+Cloudera — Coursera · 3-course program · [Verify ↗](https://coursera.org/share/0814333adf33da90fe2725ac5adc5b91)
+Focused on large-scale data analysis, distributed databases, and SQL for big data management.
+Entrepreneurship Mastery Program
+Mohammed bin Rashid Foundation & UNDP — Coursera · 5-course program · [Verify ↗](https://coursera.org/share/519ae898fa90c20a74d2589a8ae32aa9)
+Comprehensive program covering business modeling, product management, finance, and innovation.
+
+### Education
+Bachelor's Degree — International Business Management
+International University of Technology Twintech (IUTT), Yemen
+Higher National Diploma — Educational Leadership & Administration
+Youth Leadership Development Foundation
+
+### Technical Skills
+Data Engineering
+Business Analytics
+AI & Development Tools
+Business Skills
+
+## Let's build something great.
+
+I'm open to data engineering roles, consulting projects, and analytical partnerships with organizations working at scale.
+[abdulsalamalashwal@outlook.com](mailto:abdulsalamalashwal@outlook.com)
+[+967 77 503 2054](tel:+967775032054)
+[WhatsApp](https://wa.me/967775032054)
+[LinkedIn](https://www.linkedin.com/in/abdulsalam-alashwal/)
+[GitHub](https://github.com/yourprofile)
+© 2026 Abdulsalam Al-Ashwal
+[LinkedIn](https://www.linkedin.com/in/abdulsalam-alashwal/)
+[GitHub](https://github.com/yourprofile)
+[Email](mailto:abdulsalamalashwal@outlook.com)

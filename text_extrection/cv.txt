@@ -1,0 +1,46 @@
+Abdulsalam Faiz Mohamed Al-Ashwal
+| Yemen | +967 775032054 | abdulsalamalashwal@outlook.com |
+ LinkedIn: https://www.linkedin.com/in/abdulsalam-alashwal/  | 
+Summary
+Data Analyst with data engineering and automation experience in performance evaluation across commercial sales and humanitarian projects. Skilled in defining KPIs, building data pipelines, and automating reporting workflows based on business needs. Proficient in Python, SQL, Power BI, and SAP, with hands-on experience applying data-driven solutions and practical AI tools to support operations. Able to present insights clearly to support business decisions.
+Experience
+Data Analyst and Engineer Trainee| Hayel Saeed Anam (HSA) Group — Yemen
+Jan 2026 – Present
+•	Built automated sales dashboards and reports, improving reporting efficiency by 30–40%.
+•	Extracted and analyzed SAP ERP data to support business decisions and performance tracking.
+•	Automated manual processes, reducing workload by 8–12 hours per week.
+Monitoring & Evaluation (M&E) Assistant | Tamdeen Youth Foundation — Yemen
+Jan 2025 – Dec 2025
+•	Implemented Results-Oriented Monitoring (ROM) frameworks and tracked KPIs for large-scale humanitarian projects.
+•	Automated data cleaning and validation processes, improving reporting accuracy by 20–30%.
+•	Supported daily and weekly reporting cycles, ensuring timely and accurate data delivery to donors and stakeholders.
+Business Analyst (Part-time) | Triple Nexus Strategic Company (TNSC)
+Jun 2024 – Dec 2024
+•	Developed KPIs and dashboards to support business performance analysis and reporting.
+•	Conducted data analysis and operational assessments to improve workflows.
+•	Contributed to consulting reports and data-driven solutions.
+•	Designed business dashboards that enhanced visibility of key metrics and improved reporting efficiency by 25%.
+Projects
+1.	AI-powered data analysis and automation platform
+A comprehensive, professional-grade cloud platform for data analysis, interactive visualization, and automated reporting.
+2.	Real-Time Country Dashboard (Yemen Nexus)
+Built a real-time dashboard integrating multi-sector data (economy, health, weather), enabling faster decision-making and reducing reliance on fragmented data sources.
+3.	Podcast Text Extractor Tool
+Developed a Python-based tool using AI models to convert video content into searchable text, reducing manual content processing time.
+4.	Enterprise Database Architecture (TNSC)
+Designed a structured relational database system, transforming unorganized spreadsheets into a scalable and reliable data infrastructure for business operations.
+
+Education
+•	Bachelor’s degree in international business management international University of Technology Twintech (IUTT), Yemen      
+•	Higher National Diploma in Educational Leadership & Administration Youth Leadership Development Foundation
+Technical Tools & Systems
+•	Data Analysis & BI: Power BI, Tableau, Advanced Excel.
+•	Data Engineering: SQL (Database Design), Python (ETL Automation & Cleaning) Apache Airflow, Apache Spark.
+•	AI Tools: Open-Source AI Models (Local Deployment & Customization)
+Business Skills
+KPI Analysis, Sales & Market Analysis, Business Intelligence, Strategic Planning
+Professional Certifications
+•	IBM Data Engineering Specialization – IBM (Coursera).
+•	Advanced Business Analytics Specialization – University of Colorado (Coursera).
+•	Modern Big Data Analysis with SQL Specialization – Cloudera (Coursera)
+•	Entrepreneurship Mastery Program – Coursera

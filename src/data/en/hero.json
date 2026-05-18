@@ -1,0 +1,29 @@
+{
+  "badge": "Open to Strategic Opportunities",
+  "headline": "Data Analyst & Data Engineer",
+  "headlineAccent": "Data Analyst",
+  "headlineSuffix": "engineering solutions for clearer business insights",
+  "subheadline": "Data Analyst with extensive experience in data engineering and automation, specializing in performance evaluation across commercial sales and humanitarian projects. Skilled in defining KPIs, building robust data pipelines, and automating complex reporting workflows. Proficient in Python, SQL, Power BI, and SAP ERP, with a proven track record of applying data-driven solutions and practical AI tools to optimize operations and support executive decision-making.",
+  "competencies": [
+    {
+      "icon": "Database",
+      "label": "Data Engineering",
+      "description": "Robust ETL pipelines, SAP ERP data extraction, warehouse architecture, and automated data workflows using Python and SQL."
+    },
+    {
+      "icon": "BarChart3",
+      "label": "Business Intelligence",
+      "description": "Power BI & Tableau dashboards, KPI frameworks, executive reporting, and performance evaluation systems."
+    },
+    {
+      "icon": "Globe",
+      "label": "M&E & Humanitarian Data",
+      "description": "Results-Oriented Monitoring (ROM) frameworks, UNOPS project data, and cross-sector impact analytics."
+    },
+    {
+      "icon": "BrainCircuit",
+      "label": "AI & Automation",
+      "description": "Open-source AI models, NLP pipelines, intelligent document processing, and workflow automation saving 8–12 hours weekly."
+    }
+  ]
+}

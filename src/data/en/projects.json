@@ -1,0 +1,62 @@
+[
+  {
+    "id": "phonixpro",
+    "title": "AI-Powered Data Analysis Platform",
+    "category": "Cloud Analytics Platform",
+    "featured": true,
+    "image": "/images/projects/phonixpro.png",
+    "objective": "Build a professional-grade cloud platform for comprehensive data analysis, interactive visualization, and fully automated reporting — eliminating manual analyst overhead.",
+    "solution": "Architected an in-memory SaaS engine with real-time data processing, AI-driven natural language querying, interactive chart generation, and automated PDF report export. Built with Next.js, Python, Redis, and Gemini AI.",
+    "impact": "Enabled non-technical users to perform complex data analysis through conversational AI, reducing time-to-insight from hours to minutes.",
+    "techStack": ["Next.js", "Python", "Redis", "PostgreSQL", "Gemini AI"],
+    "metrics": [
+      { "value": "70%", "label": "Reduction in analysis time" },
+      { "value": "<50ms", "label": "Average query response" }
+    ]
+  },
+  {
+    "id": "podcast-extractor",
+    "title": "Podcast AI-ETL Pipeline",
+    "category": "AI Automation",
+    "featured": false,
+    "image": "/images/projects/text-extractor.png",
+    "objective": "Automate the ingestion of large video files, converting hours of footage into precise, searchable, and timestamped text using a hybrid local + cloud AI architecture.",
+    "solution": "Built a Python application leveraging open-source AI speech-to-text models for accurate transcription, with post-processing NLP for speaker identification and topic segmentation.",
+    "impact": "Reduced manual video processing time by over 80%, enabling rapid content indexing and searchability.",
+    "techStack": ["Python", "AI/ML", "NLP", "Speech-to-Text"],
+    "metrics": [
+      { "value": "80%+", "label": "Processing time saved" },
+      { "value": "AI", "label": "Automated transcription" }
+    ]
+  },
+  {
+    "id": "yemen-nexus",
+    "title": "Real-Time Country Dashboard",
+    "category": "Humanitarian Analytics",
+    "featured": false,
+    "image": "/images/projects/yemen-dashboard.png",
+    "objective": "Consolidate fragmented multi-sector data — economy, health, weather — into a centralized real-time dashboard for strategic decision-making across Yemen.",
+    "solution": "Designed automated ETL pipelines to ingest data from multiple APIs and public sources, with interactive Power BI dashboards featuring drill-down capabilities and row-level security for multi-stakeholder access.",
+    "impact": "Eliminated reliance on fragmented data sources and enabled faster, evidence-based strategic decisions for programme leadership.",
+    "techStack": ["Python", "Power BI", "REST APIs", "SQL Server", "Azure"],
+    "metrics": [
+      { "value": "5+", "label": "Data sectors integrated" },
+      { "value": "Real-time", "label": "Dashboard updates" }
+    ]
+  },
+  {
+    "id": "tnsc-database",
+    "title": "Enterprise Database Architecture",
+    "category": "Data Engineering",
+    "featured": false,
+    "image": "/images/Enterprise Database Architecture.png",
+    "objective": "Transform unorganized spreadsheets into a scalable, reliable relational database infrastructure for enterprise business operations at TNSC.",
+    "solution": "Architected a normalized relational database schema with proper entity relationships, data integrity constraints, and migration scripts. Replaced ad-hoc Excel workflows with structured SQL-based data access and reporting.",
+    "impact": "Established a single source of truth for business operations, dramatically improving data reliability and enabling automated reporting pipelines.",
+    "techStack": ["PostgreSQL", "SQL", "Python", "Database Design"],
+    "metrics": [
+      { "value": "100%", "label": "Data centralization" },
+      { "value": "Scalable", "label": "Enterprise-ready architecture" }
+    ]
+  }
+]
