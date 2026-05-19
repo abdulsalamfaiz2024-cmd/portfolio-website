@@ -71,6 +71,8 @@ export function CredentialsSection({ data, lang = "en" }: CredentialsSectionProp
                 <video
                   src="/videos/VID-20250715-WA0001.mp4"
                   controls
+                  preload="auto"
+                  playsInline
                   className="w-full h-auto max-h-[500px] lg:max-h-[600px] object-contain"
                 >
                   Your browser does not support the video tag.
