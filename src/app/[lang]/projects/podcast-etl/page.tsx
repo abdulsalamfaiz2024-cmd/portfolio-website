@@ -204,7 +204,7 @@ const content = {
 const img = (name: string) => `/images/projects/podcast-etl/${name}`;
 
 /* ── Active section tracker ─────────────────────────────────────────── */
-function useActiveSection(tocSections: any[]) {
+function useActiveSection(tocSections: { id: string; label: string }[]) {
   const [active, setActive] = useState("overview");
 
   useEffect(() => {

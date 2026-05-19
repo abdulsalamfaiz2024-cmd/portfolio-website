@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Download, ArrowRight } from "lucide-react";
+import { Download, ArrowRight, Database, BarChart3, Globe, BrainCircuit, CheckCircle2 } from "lucide-react";
 import type { HeroData, SiteConfig } from "@/types";
 import { ParticleNetwork } from "@/components/ui/ParticleNetwork";
 
@@ -89,17 +89,15 @@ export function Hero({ data, config, lang = "en" }: HeroProps) {
         {/* Competencies Grid */}
         <FadeIn delay={0.2} className="mt-20 pt-16 border-t border-slate-100">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {data.competencies.map((comp, i) => {
+            {data.competencies.map((comp) => {
               // Dynamically get the icon from lucide-react
-              // using a hardcoded switch for the specific icons used in hero.json
-              // to ensure compatibility with Next.js compiling
               const getIcon = (name: string) => {
                 switch (name) {
-                  case 'Database': return require('lucide-react').Database;
-                  case 'BarChart3': return require('lucide-react').BarChart3;
-                  case 'Globe': return require('lucide-react').Globe;
-                  case 'BrainCircuit': return require('lucide-react').BrainCircuit;
-                  default: return require('lucide-react').CheckCircle2;
+                  case 'Database': return Database;
+                  case 'BarChart3': return BarChart3;
+                  case 'Globe': return Globe;
+                  case 'BrainCircuit': return BrainCircuit;
+                  default: return CheckCircle2;
                 }
               };
               const Icon = getIcon(comp.icon);

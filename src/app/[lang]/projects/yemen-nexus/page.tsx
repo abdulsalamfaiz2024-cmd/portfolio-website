@@ -241,7 +241,7 @@ function StepRow({
 }
 
 /* ── Active section tracker ─────────────────────────────────────────── */
-function useActiveSection(tocSections: any[]) {
+function useActiveSection(tocSections: { id: string; label: string }[]) {
   const [active, setActive] = useState("overview");
 
   useEffect(() => {
