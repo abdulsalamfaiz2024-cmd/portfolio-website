@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Download, ArrowRight } from "lucide-react";
 import type { HeroData, SiteConfig } from "@/types";
+import { ParticleNetwork } from "@/components/ui/ParticleNetwork";
 
 interface HeroProps {
   data: HeroData;
@@ -13,8 +14,9 @@ interface HeroProps {
 
 export function Hero({ data, config, lang = "en" }: HeroProps) {
   return (
-    <section id="about" className="bg-white pt-16 pb-24 md:pt-24 md:pb-32">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="relative bg-white pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden">
+      <ParticleNetwork />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
           {/* Text content */}
           <FadeIn>
