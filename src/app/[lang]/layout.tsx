@@ -24,9 +24,33 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang: paramLang } = await params;
   const lang = paramLang as 'en' | 'ar';
   const dict = await getDictionary(lang);
+  const title = dict.site.title ? `${dict.site.name} — ${dict.site.title}` : dict.site.name;
+  const description = "Data Analyst & Data Engineer | محلل ومهندس بيانات 👨‍💻\nSpecializing in performance evaluation, data automation, and BI | متخصص في تقييم الأداء، أتمتة البيانات، وذكاء الأعمال 🚀";
+  
   return {
-    title: dict.site.title ? `${dict.site.name} — ${dict.site.title}` : dict.site.name,
-    description: dict.site.description,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: 'https://abdulsalamalashwal.com',
+      siteName: dict.site.name,
+      images: [
+        {
+          url: '/images/profile.jpeg',
+          width: 800,
+          height: 800,
+          alt: dict.site.name,
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/profile.jpeg'],
+    },
   };
 }
 
