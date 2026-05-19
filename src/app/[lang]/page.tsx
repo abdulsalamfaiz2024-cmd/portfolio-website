@@ -8,8 +8,9 @@ import { getDictionary } from "@/utils/dictionary";
 
 import type { ExperienceEntry, ProjectEntry, CredentialsData, HeroData, SiteConfig } from "@/types";
 
-export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ar' }> }) {
-  const { lang } = await params;
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang: paramLang } = await params;
+  const lang = paramLang as 'en' | 'ar';
   const dict = await getDictionary(lang);
 
   return (

@@ -20,8 +20,9 @@ const tajawal = Tajawal({
   display: "swap",
 });
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: 'en' | 'ar' }> }): Promise<Metadata> {
-  const { lang } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang: paramLang } = await params;
+  const lang = paramLang as 'en' | 'ar';
   const dict = await getDictionary(lang);
   return {
     title: dict.site.title ? `${dict.site.name} — ${dict.site.title}` : dict.site.name,
@@ -38,9 +39,10 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: 'en' | 'ar' }>;
+  params: Promise<{ lang: string }>;
 }>) {
-  const { lang } = await params;
+  const { lang: paramLang } = await params;
+  const lang = paramLang as 'en' | 'ar';
   const dict = await getDictionary(lang);
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
   const fontClass = lang === 'ar' ? tajawal.variable : inter.variable;
