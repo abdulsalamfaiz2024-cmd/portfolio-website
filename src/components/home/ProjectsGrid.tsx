@@ -26,8 +26,8 @@ export function ProjectsGrid({ projects, lang = "en" }: ProjectsGridProps) {
             </h3>
             <p className="text-lg text-slate-500 leading-relaxed">
               {lang === 'ar' 
-                ? "مجموعة من المنصات، مسارات البيانات، ولوحات التحكم التي تحل مشاكل معقدة وتحقق تأثيراً ملموساً."
-                : "A collection of platforms, pipelines, and dashboards that solve complex problems and drive measurable impact."}
+                ? "منصات ومسارات بيانات ولوحات تحكم بنيتها لتلبية احتياجات عمل حقيقية."
+                : "Platforms, pipelines, and dashboards I built to meet real business needs."}
             </p>
           </div>
         </FadeIn>
@@ -106,7 +106,7 @@ export function ProjectsGrid({ projects, lang = "en" }: ProjectsGridProps) {
                     </div>
 
                     {/* Case study link */}
-                    {(project.id === "phonixpro" || project.id === "yemen-nexus" || project.id === "podcast-extractor") && (
+                    {(project.id === "phonixpro" || project.id === "yemen-nexus" || project.id === "podcast-extractor" || project.id === "tnsc-database") && (
                       <div>
                         <Link
                           href={`/${lang}/projects/${project.id === "podcast-extractor" ? "podcast-etl" : project.id}`}

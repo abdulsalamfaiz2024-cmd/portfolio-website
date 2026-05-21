@@ -42,6 +42,7 @@ const content = {
       { id: "overview", label: "Overview" },
       { id: "value", label: "Value Proposition" },
       { id: "architecture", label: "Hybrid AI Architecture" },
+      { id: "code-highlights", label: "Code Highlights" },
       { id: "workflow", label: "Automation Workflow" },
     ],
     tags: ["AI Automation", "NLP", "Audio Processing", "ETL", "Python"],
@@ -127,6 +128,7 @@ const content = {
       { id: "overview", label: "نظرة عامة" },
       { id: "value", label: "القيمة المضافة" },
       { id: "architecture", label: "البنية التحتية" },
+      { id: "code-highlights", label: "من الكود" },
       { id: "workflow", label: "سير عمل الأتمتة" },
     ],
     tags: ["أتمتة الذكاء الاصطناعي", "معالجة اللغات الطبيعية", "معالجة الصوت", "ETL", "بايثون"],
@@ -477,6 +479,152 @@ export default function PodcastEtlCaseStudy() {
                   <div className="flex flex-wrap gap-2">
                     {data.coreStackTags.map((t) => (
                       <span key={t} className="text-xs text-slate-500 bg-white border border-slate-200 rounded-full px-3 py-1">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            </FadeIn>
+
+            {/* ── Code Highlights ────────────────────────────────── */}
+            <FadeIn>
+              <section id="code-highlights" className="mb-12 sm:mb-20 scroll-mt-24">
+                <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 mb-2">
+                  {lang === 'ar' ? 'مقتطفات من الكود الفعلي' : 'Code Highlights'}
+                </h2>
+                <p className="text-slate-500 mb-8 text-[0.9375rem]">
+                  {lang === 'ar'
+                    ? 'مقتطفات حقيقية من الكود المصدري توضح الأنماط الهندسية الرئيسية في هذا المسار.'
+                    : 'Real excerpts from the pipeline source code showing the key engineering patterns.'}
+                </p>
+
+                <div className="space-y-6">
+                  {/* Snippet 1: FFmpeg Audio Extraction */}
+                  <div className="rounded-xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
+                      <span className="text-xs font-mono text-slate-400">
+                        {lang === 'ar' ? 'استخراج الصوت — FFmpeg subprocess' : 'Audio Extraction — FFmpeg subprocess'}
+                      </span>
+                      <span className="text-[0.625rem] font-mono text-slate-500">production_factory.py</span>
+                    </div>
+                    <pre className="bg-slate-900 p-4 overflow-x-auto text-[0.8125rem] leading-relaxed" dir="ltr">
+                      <code className="text-slate-300 font-mono">{`def extract_audio(video_path, audio_output_path, ffmpeg_path):
+    cmd = [
+        ffmpeg_path, "-y", "-i", video_path, "-vn",
+        "-acodec", "pcm_s16le",   # PCM 16-bit little-endian
+        "-ar", "16000",           # 16 kHz — Whisper standard
+        "-ac", "1",               # Mono channel
+        audio_output_path
+    ]
+    subprocess.run(cmd, check=True,
+                   stdout=subprocess.PIPE,
+                   stderr=subprocess.PIPE)`}</code>
+                    </pre>
+                  </div>
+
+                  {/* Snippet 2: Smart Chunking + Buffer Logic */}
+                  <div className="rounded-xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
+                      <span className="text-xs font-mono text-slate-400">
+                        {lang === 'ar' ? 'التجزئة الذكية — منطق التخزين المؤقت للطوابع الزمنية' : 'Smart Chunking — Timestamp buffer logic'}
+                      </span>
+                      <span className="text-[0.625rem] font-mono text-slate-500">production_factory.py</span>
+                    </div>
+                    <pre className="bg-slate-900 p-4 overflow-x-auto text-[0.8125rem] leading-relaxed" dir="ltr">
+                      <code className="text-slate-300 font-mono">{`PAUSE_THRESHOLD = 1.0   # seconds of silence = new block
+time_offset = i * SEGMENT_SECONDS  # absolute position
+
+for seg in segments:
+    abs_start = seg.start + time_offset
+    gap = abs_start - last_end
+    curr_dur = abs_end - buffer_start
+
+    # Flush when speaker pauses or buffer exceeds 60s
+    should_flush = (gap > PAUSE_THRESHOLD) or (curr_dur > 60.0)
+
+    if not should_flush:
+        buffer_text.append(seg.text.strip())
+    else:
+        merged = " ".join(buffer_text)
+        ts = format_timestamp(buffer_start)
+        line = f"[{ts}] {merged}"  # [00:14:32.400] ...
+        segment_lines.append(line)`}</code>
+                    </pre>
+                  </div>
+
+                  {/* Snippet 3: Gemini Polish with retry */}
+                  <div className="rounded-xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
+                      <span className="text-xs font-mono text-slate-400">
+                        {lang === 'ar' ? 'تنقيح بالذكاء الاصطناعي — Gemini مع إعادة المحاولة' : 'AI Polishing — Gemini with retry loop'}
+                      </span>
+                      <span className="text-[0.625rem] font-mono text-slate-500">polish_transcript.py</span>
+                    </div>
+                    <pre className="bg-slate-900 p-4 overflow-x-auto text-[0.8125rem] leading-relaxed" dir="ltr">
+                      <code className="text-slate-300 font-mono">{`def polish_chunk(raw_text):
+    model = genai.GenerativeModel('gemini-flash-latest')
+    prompt = f"""
+    STRICT RULES:
+    1. NO CREATIVITY — Do NOT add words or change style.
+    2. Fix spelling, grammar, remove hallucinations.
+    3. TIMESTAMPS ARE SACRED — preserve [HH:MM:SS].
+    4. Distinguish "Host" and "Guest" dialogue.
+    INPUT: {raw_text}
+    """
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            return model.generate_content(prompt).text
+        except Exception as e:
+            if "429" in str(e):  # Quota exceeded
+                time.sleep(60)   # Back off 60s
+                continue
+            return raw_text      # Fallback to raw`}</code>
+                    </pre>
+                  </div>
+
+                  {/* Snippet 4: Batch Orchestrator */}
+                  <div className="rounded-xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
+                      <span className="text-xs font-mono text-slate-400">
+                        {lang === 'ar' ? 'المنسق — مصنع المعالجة الدفعية' : 'Orchestrator — Batch processing factory'}
+                      </span>
+                      <span className="text-[0.625rem] font-mono text-slate-500">production_factory.py</span>
+                    </div>
+                    <pre className="bg-slate-900 p-4 overflow-x-auto text-[0.8125rem] leading-relaxed" dir="ltr">
+                      <code className="text-slate-300 font-mono">{`def process_and_transcribe(video_path):
+    # 1. Extract → 16 kHz mono WAV
+    extract_audio(video_path, audio_wav, FFMPEG_EXE)
+    # 2. Split  → 10-min chunks (prevents OOM)
+    split_audio(audio_wav, SEGMENT_SECONDS, FFMPEG_EXE)
+    # 3. Transcribe each chunk → timestamped text
+    model = WhisperModel("tiny", device="cpu", compute_type="int8")
+    for i, file_path in enumerate(files):
+        segments, info = model.transcribe(file_path, beam_size=1)
+        # 4. Polish immediately → Gemini cleanup
+        polished_text = polish_chunk(raw_chunk_text)
+    # 5. Publish final + archive video
+    shutil.move(draft_polished_file, final_path)
+    shutil.move(video_path, PROCESSED_DIR)`}</code>
+                    </pre>
+                  </div>
+                </div>
+
+                {/* Design decisions callout */}
+                <div className="mt-6 rounded-xl bg-slate-50 border border-slate-200 p-5">
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+                    {lang === 'ar' ? 'قرارات هندسية' : 'Engineering Decisions'}
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {[
+                      { en: 'beam_size=1 (greedy) — speed over accuracy, polishing corrects errors anyway.', ar: 'beam_size=1 (جشع) — السرعة أولاً، التنقيح يصحح الأخطاء لاحقاً.' },
+                      { en: 'INT8 quantization — runs on any CPU without GPU dependency.', ar: 'تكميم INT8 — يعمل على أي معالج بدون GPU.' },
+                      { en: '10-min segments — prevents memory overflow on 2-hour episodes.', ar: 'تجزئة 10 دقائق — تمنع امتلاء الذاكرة للحلقات الطويلة.' },
+                      { en: 'Graceful fallback — if Gemini fails, raw transcript is preserved.', ar: 'تراجع آمن — إذا فشل Gemini، يُحفظ النص الخام كما هو.' },
+                    ].map((d, i) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="h-3.5 w-3.5 text-accent mt-0.5 shrink-0" />
+                        <p className="text-xs text-slate-500 leading-relaxed">{lang === 'ar' ? d.ar : d.en}</p>
+                      </div>
                     ))}
                   </div>
                 </div>

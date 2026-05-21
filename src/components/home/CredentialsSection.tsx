@@ -98,6 +98,18 @@ export function CredentialsSection({ data, lang = "en" }: CredentialsSectionProp
                     <div>
                       <p className="text-sm font-bold text-slate-900">{edu.degree} — {edu.field}</p>
                       <p className="text-sm text-slate-500">{edu.institution}</p>
+                      {edu.tags && edu.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5 mt-2">
+                          {edu.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="text-[0.6875rem] text-slate-500 bg-white border border-slate-200 rounded px-2 py-0.5"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}

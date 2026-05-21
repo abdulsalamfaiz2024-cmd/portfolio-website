@@ -82,6 +82,7 @@ export interface EducationEntry {
   field: string;
   institution: string;
   status: string;
+  tags?: string[];
 }
 
 export interface CredentialsData {

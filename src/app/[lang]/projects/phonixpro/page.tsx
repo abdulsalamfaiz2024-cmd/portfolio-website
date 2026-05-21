@@ -500,7 +500,7 @@ export default function PhonixProCaseStudy() {
                 </p>
 
                 <div className="space-y-5">
-                  {data.aiCapabilities.map((cap: { title: string; description: string }, i: number) => (
+                  {data.aiCapabilities.map((cap: any, i: number) => (
                     <FadeIn key={cap.title} delay={i * 0.07}>
                       <div className="relative rounded-2xl border-2 border-accent/15 bg-gradient-to-br from-accent-muted/50 to-white p-5 sm:p-7 hover:border-accent/25 hover:shadow-md transition-all">
                         {/* Glow dot */}

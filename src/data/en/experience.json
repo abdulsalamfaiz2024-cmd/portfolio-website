@@ -6,7 +6,7 @@
     "period": "Jan 2026 — Present",
     "location": "Yemen",
     "type": "corporate",
-    "summary": "Building automated sales analytics infrastructure and executive reporting systems for one of the largest conglomerates in the Middle East. Extracting and transforming complex SAP ERP datasets to drive performance tracking across commercial operations.",
+    "summary": "Setting up automated sales reporting and analytics for one of the largest conglomerates in the Middle East. Extracting and transforming SAP ERP data to track commercial performance across business units.",
     "metrics": [
       { "value": "30–40%", "label": "Reporting efficiency improvement" },
       { "value": "8–12 hrs", "label": "Saved per week via automation" },
@@ -23,7 +23,7 @@
     "period": "Jan 2025 — Dec 2025",
     "location": "Yemen",
     "type": "humanitarian",
-    "summary": "Implemented Results-Oriented Monitoring (ROM) frameworks for large-scale humanitarian projects. Designed automated data cleaning and validation pipelines to ensure high-quality reporting for donors and programme stakeholders.",
+    "summary": "Applied Results-Oriented Monitoring (ROM) frameworks on humanitarian projects. Built automated data cleaning and validation processes to improve reporting quality for donors and programme teams.",
     "metrics": [
       { "value": "20–30%", "label": "Increase in reporting accuracy" },
       { "value": "ROM", "label": "Frameworks implemented" },
@@ -40,7 +40,7 @@
     "period": "Jun 2024 — Dec 2024",
     "location": "Yemen",
     "type": "consulting",
-    "summary": "Designed and deployed business intelligence dashboards enhancing visibility into core operational metrics. Supported executive decision-making through structured data analysis and reporting architecture.",
+    "summary": "Built business intelligence dashboards to give management a clearer view of operational metrics. Provided structured data analysis and regular reporting to support leadership decisions.",
     "metrics": [
       { "value": "25%", "label": "Operational reporting efficiency gain" },
       { "value": "KPI", "label": "Frameworks designed" },

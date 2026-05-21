@@ -43,13 +43,13 @@ export function ContactSection({ config, lang = "en" }: ContactSectionProps) {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">
-            {lang === 'ar' ? "لنقم ببناء شيء عظيم." : "Let's build something great."}
+            {lang === 'ar' ? "تواصل معي" : "Get in Touch"}
           </h2>
           
           <p className="text-lg text-slate-500 leading-relaxed mb-10 max-w-2xl mx-auto">
             {lang === 'ar' 
-              ? "أنا منفتح لأدوار هندسة البيانات، المشاريع الاستشارية، والشراكات التحليلية مع المؤسسات التي تعمل على نطاق واسع."
-              : "I'm open to data engineering roles, consulting projects, and analytical partnerships with organizations working at scale."}
+              ? "أنا منفتح لأدوار هندسة البيانات والمشاريع الاستشارية. إذا كان عندك مشروع أو فرصة، تواصل معي."
+              : "I'm open to data engineering roles and consulting projects. If you have something in mind, I'd be glad to hear about it."}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 mb-12 text-slate-700">
