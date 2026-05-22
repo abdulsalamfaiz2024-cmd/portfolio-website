@@ -58,6 +58,15 @@ export function CredentialsSection({ data, lang = "en" }: CredentialsSectionProp
                           {cert.description}
                         </p>
                       )}
+                      {cert.image && (
+                        <a href={cert.image} target="_blank" rel="noopener noreferrer" className="block mt-3">
+                          <img
+                            src={cert.image}
+                            alt={cert.title}
+                            className="rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow max-w-[280px] w-full"
+                          />
+                        </a>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -109,6 +118,15 @@ export function CredentialsSection({ data, lang = "en" }: CredentialsSectionProp
                             </span>
                           ))}
                         </div>
+                      )}
+                      {edu.image && (
+                        <a href={edu.image} target="_blank" rel="noopener noreferrer" className="block mt-3">
+                          <img
+                            src={edu.image}
+                            alt={edu.degree}
+                            className="rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow max-w-[200px] w-full"
+                          />
+                        </a>
                       )}
                     </div>
                   </div>

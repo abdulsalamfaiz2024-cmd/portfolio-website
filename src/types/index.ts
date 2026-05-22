@@ -68,6 +68,7 @@ export interface CertificationEntry {
   date: string;
   credentialUrl?: string;
   description: string;
+  image?: string;         // path relative to public/
 }
 
 export interface SkillCategory {
@@ -83,6 +84,7 @@ export interface EducationEntry {
   institution: string;
   status: string;
   tags?: string[];
+  image?: string;         // path relative to public/
 }
 
 export interface CredentialsData {
