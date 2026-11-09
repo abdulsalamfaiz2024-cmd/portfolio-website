@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Sales workbook reconciliation and validation summary">
+<rect width="1200" height="700" fill="#f8fafc"/><rect x="48" y="48" width="1104" height="604" rx="22" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+<text x="90" y="111" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#102b46">Audit &amp; reconciliation controls</text>
+<text x="90" y="147" font-family="Arial,sans-serif" font-size="18" fill="#64748b">Independent totals compared with the prepared Excel analysis</text>
+<rect x="89" y="193" width="1021" height="54" rx="8" fill="#19354f"/><text x="120" y="229" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#ffffff">Check</text><text x="630" y="229" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#ffffff">Reconciled result</text><text x="993" y="229" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#ffffff">Status</text>
+<g font-family="Arial,sans-serif" font-size="21" fill="#334155">
+<text x="120" y="300">Transactions</text><text x="630" y="300">700 of 700</text><text x="1004" y="300" fill="#147a53" font-weight="700">PASS</text>
+<text x="120" y="368">Units sold</text><text x="630" y="368">1,125,806</text><text x="1004" y="368" fill="#147a53" font-weight="700">PASS</text>
+<text x="120" y="436">Net sales</text><text x="630" y="436">$118,726,350.26</text><text x="1004" y="436" fill="#147a53" font-weight="700">PASS</text>
+<text x="120" y="504">Total profit</text><text x="630" y="504">$16,893,702.26</text><text x="1004" y="504" fill="#147a53" font-weight="700">PASS</text>
+<text x="120" y="572">Loss-making rows</text><text x="630" y="572">58</text><text x="1004" y="572" fill="#147a53" font-weight="700">PASS</text>
+</g>
+<g stroke="#e2e8f0" stroke-width="2"><line x1="89" y1="322" x2="1110" y2="322"/><line x1="89" y1="390" x2="1110" y2="390"/><line x1="89" y1="458" x2="1110" y2="458"/><line x1="89" y1="526" x2="1110" y2="526"/></g>
+</svg>

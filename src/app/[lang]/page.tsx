@@ -2,6 +2,7 @@ import { Hero } from "@/components/home/Hero";
 import { ExperienceTimeline } from "@/components/home/ExperienceTimeline";
 import { PhotoGallery } from "@/components/home/PhotoGallery";
 import { ProjectsGrid } from "@/components/home/ProjectsGrid";
+import { ExcelProjectsSection } from "@/components/home/ExcelProjectsSection";
 import { CredentialsSection } from "@/components/home/CredentialsSection";
 import { ContactSection } from "@/components/home/ContactSection";
 import { getDictionary } from "@/utils/dictionary";
@@ -22,6 +23,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       />
       <ExperienceTimeline entries={dict.experience as ExperienceEntry[]} lang={lang} />
       <PhotoGallery lang={lang} />
+      <ExcelProjectsSection lang={lang} />
       <ProjectsGrid projects={dict.projects as ProjectEntry[]} lang={lang} />
       <CredentialsSection data={dict.credentials as CredentialsData} lang={lang} />
       <ContactSection config={dict.site as SiteConfig} lang={lang} />
