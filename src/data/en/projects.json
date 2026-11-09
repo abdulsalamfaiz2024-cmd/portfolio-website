@@ -1,9 +1,62 @@
 [
   {
+    "id": "yemen-nexus",
+    "title": "Live Monitoring Dashboard for Yemen's Humanitarian Situation",
+    "category": "Humanitarian Analytics",
+    "featured": true,
+    "image": "/images/projects/yemen-dashboard.png",
+    "objective": "Bring together scattered data across sectors — economy, health, weather — into one real-time dashboard for decision-makers in Yemen.",
+    "solution": "Built automated ETL pipelines to pull data from multiple APIs and public sources, with interactive Power BI dashboards including drill-down views and row-level security for different stakeholders.",
+    "impact": "Replaced scattered data sources with a single dashboard, helping programme leadership make faster, evidence-based decisions.",
+    "techStack": [
+      "Python",
+      "Power BI",
+      "REST APIs",
+      "SQL Server",
+      "Azure"
+    ],
+    "metrics": [
+      {
+        "value": "5+",
+        "label": "Data sectors integrated"
+      },
+      {
+        "value": "Real-time",
+        "label": "Dashboard updates"
+      }
+    ]
+  },
+  {
+    "id": "tnsc-database",
+    "title": "Enterprise Database Architecture",
+    "category": "Data Engineering",
+    "featured": false,
+    "image": "/images/Enterprise Database Architecture.png",
+    "objective": "Move TNSC from unorganized spreadsheets to a structured relational database for daily business operations.",
+    "solution": "Designed a normalized database schema with proper entity relationships, data integrity rules, and migration scripts. Replaced ad-hoc Excel workflows with SQL-based data access and reporting.",
+    "impact": "Gave the business one reliable place for its data, improved data accuracy, and made automated reporting possible.",
+    "techStack": [
+      "PostgreSQL",
+      "SQL",
+      "Python",
+      "Database Design"
+    ],
+    "metrics": [
+      {
+        "value": "100%",
+        "label": "Data centralization"
+      },
+      {
+        "value": "Scalable",
+        "label": "Enterprise-ready architecture"
+      }
+    ]
+  },
+  {
     "id": "phonixpro",
     "title": "Data Analysis & Reporting Platform",
     "category": "Cloud Analytics Platform",
-    "featured": true,
+    "featured": false,
     "image": "/images/projects/phonixpro.png",
     "objective": "Build a web platform for data analysis, interactive charts and automated reports with less manual processing.",
     "solution": "Developed an in-memory SaaS data workspace with natural-language querying, interactive visualizations and PDF reports using Next.js, Python and Redis.",
@@ -50,59 +103,6 @@
       {
         "value": "Text",
         "label": "Automated transcription"
-      }
-    ]
-  },
-  {
-    "id": "yemen-nexus",
-    "title": "Real-Time Country Dashboard",
-    "category": "Humanitarian Analytics",
-    "featured": false,
-    "image": "/images/projects/yemen-dashboard.png",
-    "objective": "Bring together scattered data across sectors — economy, health, weather — into one real-time dashboard for decision-makers in Yemen.",
-    "solution": "Built automated ETL pipelines to pull data from multiple APIs and public sources, with interactive Power BI dashboards including drill-down views and row-level security for different stakeholders.",
-    "impact": "Replaced scattered data sources with a single dashboard, helping programme leadership make faster, evidence-based decisions.",
-    "techStack": [
-      "Python",
-      "Power BI",
-      "REST APIs",
-      "SQL Server",
-      "Azure"
-    ],
-    "metrics": [
-      {
-        "value": "5+",
-        "label": "Data sectors integrated"
-      },
-      {
-        "value": "Real-time",
-        "label": "Dashboard updates"
-      }
-    ]
-  },
-  {
-    "id": "tnsc-database",
-    "title": "Enterprise Database Architecture",
-    "category": "Data Engineering",
-    "featured": false,
-    "image": "/images/Enterprise Database Architecture.png",
-    "objective": "Move TNSC from unorganized spreadsheets to a structured relational database for daily business operations.",
-    "solution": "Designed a normalized database schema with proper entity relationships, data integrity rules, and migration scripts. Replaced ad-hoc Excel workflows with SQL-based data access and reporting.",
-    "impact": "Gave the business one reliable place for its data, improved data accuracy, and made automated reporting possible.",
-    "techStack": [
-      "PostgreSQL",
-      "SQL",
-      "Python",
-      "Database Design"
-    ],
-    "metrics": [
-      {
-        "value": "100%",
-        "label": "Data centralization"
-      },
-      {
-        "value": "Scalable",
-        "label": "Enterprise-ready architecture"
       }
     ]
   }

@@ -33,7 +33,7 @@ import { useEffect, useState } from "react";
 const content = {
   en: {
     back: "Back to Projects",
-    title: "Yemen Nexus Dashboard",
+    title: "Live Monitoring Dashboard for Yemen\'s Humanitarian Situation",
     codename: "Codename: Atmos-Alpha",
     subtitle: "Real-Time Multi-Sectoral Intelligence & Bio-Surveillance System",
     metrics: [
@@ -123,7 +123,7 @@ const content = {
   },
   ar: {
     back: "العودة للمشاريع",
-    title: "لوحة معلومات يمن نيكسس",
+    title: "لوحة المتابعة الحية للوضع الإنساني في اليمن",
     codename: "الاسم الرمزي: Atmos-Alpha",
     subtitle: "نظام استخباراتي متعدد القطاعات ومراقبة بيولوجية في الوقت الفعلي",
     metrics: [
