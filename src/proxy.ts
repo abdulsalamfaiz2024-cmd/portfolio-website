@@ -22,6 +22,6 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths
-    '/((?!api|_next/static|_next/image|images|downloads|videos|favicon.ico).*)',
+    '/((?!api|_next/static|_next/image|images|downloads|videos|upwork-portfolio|favicon.ico|robots.txt|sitemap.xml|icon.jpg|opengraph-image.jpg).*)',
   ],
 };
