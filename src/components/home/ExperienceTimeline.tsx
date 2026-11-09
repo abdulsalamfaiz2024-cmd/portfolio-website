@@ -18,8 +18,8 @@ export function ExperienceTimeline({ entries, lang = "en" }: ExperienceTimelineP
           </h2>
           <p className="text-slate-500 mb-14 max-w-xl">
             {lang === 'ar' 
-              ? "أدوار تشمل تحليلات المؤسسات، المراقبة الإنسانية، والاستشارات التجارية."
-              : "Roles spanning enterprise analytics, humanitarian monitoring, and business consulting."}
+              ? "خبرة تجمع بين عمليات الشحن البحري، تحليل البيانات التجارية، والمتابعة والتقييم."
+              : "Experience spanning maritime operations, commercial analytics, monitoring and evaluation."}
           </p>
         </FadeIn>
 

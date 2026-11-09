@@ -1,18 +1,64 @@
 [
   {
+    "id": "exp-ocean-star",
+    "company": "Ocean Star Shipping",
+    "role": "Shipping Documentation & Export Specialist",
+    "period": "Apr 2026 — Present",
+    "location": "Al Hudaydah, Yemen",
+    "type": "corporate",
+    "summary": "Prepare and review bills of lading, cargo manifests and XML submissions for port and customs workflows. Maintain vessel, voyage and container records in the shipping system, reconcile container, weight and package details, resolve discrepancies and prepare operational Excel reports. Coordinate bookings, customers and port operations, including field follow-up during loading and discharge.",
+    "metrics": [
+      {
+        "value": "B/L",
+        "label": "Shipping documentation"
+      },
+      {
+        "value": "XML",
+        "label": "Cargo manifest submissions"
+      },
+      {
+        "value": "Excel",
+        "label": "Operational data checks"
+      }
+    ],
+    "tags": [
+      "Maritime Operations",
+      "Export Documentation",
+      "Data Reconciliation",
+      "Container Tracking",
+      "Excel",
+      "Field Coordination"
+    ]
+  },
+  {
     "id": "exp-hsa",
     "company": "Hayel Saeed Anam (HSA) Group",
     "role": "Data Analyst & Engineer Trainee",
-    "period": "Jan 2026 — Present",
+    "period": "Jan 2026 — Mar 2026",
     "location": "Yemen",
     "type": "corporate",
     "summary": "Setting up automated sales reporting and analytics for one of the largest conglomerates in the Middle East. Extracting and transforming SAP ERP data to track commercial performance across business units.",
     "metrics": [
-      { "value": "30–40%", "label": "Reporting efficiency improvement" },
-      { "value": "8–12 hrs", "label": "Saved per week via automation" },
-      { "value": "SAP ERP", "label": "Enterprise data extraction" }
+      {
+        "value": "30–40%",
+        "label": "Reporting efficiency improvement"
+      },
+      {
+        "value": "8–12 hrs",
+        "label": "Saved per week via automation"
+      },
+      {
+        "value": "SAP ERP",
+        "label": "Enterprise data extraction"
+      }
     ],
-    "tags": ["SAP ERP", "Power BI", "Python", "SQL", "Sales Analytics"],
+    "tags": [
+      "SAP ERP",
+      "Power BI",
+      "Python",
+      "SQL",
+      "Sales Analytics"
+    ],
     "image": "/images/hsa_presentation.jpg",
     "imageAlt": "Presenting Internship Placement in HSA Group"
   },
@@ -25,11 +71,26 @@
     "type": "humanitarian",
     "summary": "Applied Results-Oriented Monitoring (ROM) frameworks on humanitarian projects. Built automated data cleaning and validation processes to improve reporting quality for donors and programme teams.",
     "metrics": [
-      { "value": "20–30%", "label": "Increase in reporting accuracy" },
-      { "value": "ROM", "label": "Frameworks implemented" },
-      { "value": "3+", "label": "Large-scale projects monitored" }
+      {
+        "value": "20–30%",
+        "label": "Increase in reporting accuracy"
+      },
+      {
+        "value": "ROM",
+        "label": "Frameworks implemented"
+      },
+      {
+        "value": "3+",
+        "label": "Large-scale projects monitored"
+      }
     ],
-    "tags": ["M&E", "ROM", "Python", "Data Validation", "Humanitarian"],
+    "tags": [
+      "M&E",
+      "ROM",
+      "Python",
+      "Data Validation",
+      "Humanitarian"
+    ],
     "image": "/images/knowledge4all.jpg",
     "imageAlt": "Speaking at Knowledge4All with UNDP"
   },
@@ -42,11 +103,25 @@
     "type": "consulting",
     "summary": "Built business intelligence dashboards to give management a clearer view of operational metrics. Provided structured data analysis and regular reporting to support leadership decisions.",
     "metrics": [
-      { "value": "25%", "label": "Operational reporting efficiency gain" },
-      { "value": "KPI", "label": "Frameworks designed" },
-      { "value": "BI", "label": "Dashboards deployed" }
+      {
+        "value": "25%",
+        "label": "Operational reporting efficiency gain"
+      },
+      {
+        "value": "KPI",
+        "label": "Frameworks designed"
+      },
+      {
+        "value": "BI",
+        "label": "Dashboards deployed"
+      }
     ],
-    "tags": ["Power BI", "SQL", "KPI Design", "Business Strategy"],
+    "tags": [
+      "Power BI",
+      "SQL",
+      "KPI Design",
+      "Business Strategy"
+    ],
     "image": "/images/presentation_clicker.jpg",
     "imageAlt": "Presenting business analytics insights"
   }
