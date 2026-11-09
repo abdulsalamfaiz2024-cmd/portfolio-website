@@ -25,14 +25,14 @@ export function Navbar({ config, lang = "en" }: NavbarProps) {
     { href: `/${lang}#about`, label: "نبذة" },
     { href: `/${lang}#experience`, label: "الخبرة" },
     { href: `/${lang}#gallery`, label: "في العمل" },
-    { href: `/${lang}#projects`, label: "المشاريع" },
+    { href: `/${lang}#excel-projects`, label: "المشاريع" },
     { href: `/${lang}#credentials`, label: "الشهادات" },
     { href: `/${lang}#contact`, label: "تواصل معي" },
   ] : [
     { href: `/${lang}#about`, label: "About" },
     { href: `/${lang}#experience`, label: "Experience" },
     { href: `/${lang}#gallery`, label: "In Action" },
-    { href: `/${lang}#projects`, label: "Projects" },
+    { href: `/${lang}#excel-projects`, label: "Projects" },
     { href: `/${lang}#credentials`, label: "Credentials" },
     { href: `/${lang}#contact`, label: "Contact" },
   ];
