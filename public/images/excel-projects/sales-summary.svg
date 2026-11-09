@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Sales and profitability summary based on the workbook">
+<rect width="1200" height="750" fill="#f8fafc"/>
+<rect x="34" y="34" width="1132" height="682" rx="22" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="75" y="97" font-size="31" font-family="Arial,sans-serif" fill="#102b46" font-weight="700">Sales performance &amp; profitability</text>
+<text x="75" y="130" font-size="17" font-family="Arial,sans-serif" fill="#64748b">Portfolio data analysis · Sep 2013 – Dec 2014 · 700 transactions</text>
+<rect x="74" y="166" width="253" height="137" rx="13" fill="#eaf3fa"/><rect x="340" y="166" width="253" height="137" rx="13" fill="#e7f4ef"/><rect x="606" y="166" width="253" height="137" rx="13" fill="#fff2d3"/><rect x="872" y="166" width="253" height="137" rx="13" fill="#feeeee"/>
+<text x="97" y="200" font-size="17" font-family="Arial,sans-serif" fill="#475569">Net revenue</text><text x="97" y="259" font-size="39" font-weight="700" font-family="Arial,sans-serif" fill="#12314a">$118.73M</text>
+<text x="363" y="200" font-size="17" font-family="Arial,sans-serif" fill="#475569">Total profit</text><text x="363" y="259" font-size="39" font-weight="700" font-family="Arial,sans-serif" fill="#17754c">$16.89M</text>
+<text x="629" y="200" font-size="17" font-family="Arial,sans-serif" fill="#475569">Profit margin</text><text x="629" y="259" font-size="39" font-weight="700" font-family="Arial,sans-serif" fill="#c07c00">14.2%</text>
+<text x="895" y="200" font-size="17" font-family="Arial,sans-serif" fill="#475569">Loss-making sales</text><text x="895" y="259" font-size="39" font-weight="700" font-family="Arial,sans-serif" fill="#c03535">58</text>
+<text x="79" y="365" font-size="23" font-weight="700" font-family="Arial,sans-serif" fill="#102b46">Net sales by customer segment</text>
+<text x="80" y="410" font-size="18" font-family="Arial,sans-serif" fill="#475569">Government</text><rect x="290" y="393" width="730" height="22" rx="7" fill="#2b719b"/><text x="1033" y="410" font-size="18" font-family="Arial,sans-serif" fill="#102b46">$52.5M</text>
+<text x="80" y="463" font-size="18" font-family="Arial,sans-serif" fill="#475569">Small business</text><rect x="290" y="446" width="589" height="22" rx="7" fill="#5397b5"/><text x="1033" y="463" font-size="18" font-family="Arial,sans-serif" fill="#102b46">$42.4M</text>
+<text x="80" y="516" font-size="18" font-family="Arial,sans-serif" fill="#475569">Enterprise</text><rect x="290" y="499" width="273" height="22" rx="7" fill="#d88941"/><text x="1033" y="516" font-size="18" font-family="Arial,sans-serif" fill="#102b46">$19.6M</text>
+<text x="80" y="569" font-size="18" font-family="Arial,sans-serif" fill="#475569">Midmarket</text><rect x="290" y="552" width="34" height="22" rx="7" fill="#78abc2"/><text x="1033" y="569" font-size="18" font-family="Arial,sans-serif" fill="#102b46">$2.4M</text>
+<text x="79" y="649" font-size="21" font-weight="700" font-family="Arial,sans-serif" fill="#b44732">Enterprise loss: -$614.5K</text>
+<text x="590" y="649" font-size="17" font-family="Arial,sans-serif" fill="#64748b">Sample dataset · visualized from workbook results</text>
+</svg>
