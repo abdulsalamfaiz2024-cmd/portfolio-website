@@ -101,6 +101,162 @@ const projects: Record<ExcelLocale, ExcelProject[]> = {
         { src: "/images/excel-projects/pricing-validation.png", title: "ضوابط التحقق", description: "قائمة اختبارات البيانات والتأكد من سلامة مفاتيح الربط والمجاميع." }
       ],
       datasetNote: "حالة تطبيقية ببيانات معاملات مطعم بيتزا التجريبية للفترة يناير–فبراير 2026، وليست سجلات فعلية لشركة أدوية. أرقام الفروقات تصف أثر إعادة الاحتساب داخل مجموعة البيانات فقط."
+    },
+    {
+      "slug": "yemen-idp-data-quality",
+      "title": "جودة بيانات مواقع النازحين في اليمن",
+      "category": "Excel • جودة البيانات • رقابة تشغيلية",
+      "summary": "تنظيف وتدقيق 2,348 سجلًا لمواقع النزوح، وكشف مشكلات التحقق والتوثيق مع سجل استثناءات واضح وإجراءات مقترحة للمراجعة.",
+      "challenge": "المجاميع الظاهرة قد تتأثر بالقيم النصية، وتواريخ التحقق القديمة أو المفقودة، وروابط المواقع الرئيسية غير الصحيحة. المطلوب إظهار جودة البيانات وحدود موثوقيتها قبل الاستناد إليها.",
+      "solution": "تنظيف السجلات وتوحيد الحقول، ثم تصنيف حداثة التحقق، وفحص التسلسل بين المواقع الرئيسية والفرعية، ومطابقة المجاميع مع المصدر، وإنتاج سجل استثناءات دون إظهار الأسماء الدقيقة.",
+      "preview": "/images/excel-projects/idp-dashboard.png",
+      "previewAlt": "لوحة Excel العربية الأصلية لمؤشرات جودة بيانات مواقع النزوح وتواريخ التحقق",
+      "download": "/downloads/yemen-idp-data-quality.xlsx",
+      "metrics": [
+        {
+          "value": "2,348",
+          "label": "سجل موقع"
+        },
+        {
+          "value": "306,107",
+          "label": "أسرة بعد التنظيف"
+        },
+        {
+          "value": "72.8%",
+          "label": "سكان بسجلات تحقق قديمة أو ناقصة"
+        },
+        {
+          "value": "9",
+          "label": "قيم أسر مخزنة نصيًا"
+        }
+      ],
+      "tags": [
+        "Excel",
+        "Data Quality",
+        "Exception Register",
+        "Reconciliation"
+      ],
+      "steps": [
+        {
+          "title": "توحيد البيانات",
+          "description": "مراجعة الحقول العددية وتحويل قيم الأسر المخزنة كنصوص، وتوحيد حالة الموقع والتصنيفات."
+        },
+        {
+          "title": "اختبار حداثة السجلات",
+          "description": "تصنيف تواريخ التحقق كما كانت في لقطة 31 أغسطس 2026، ورصد غياب التقييم الميداني والشريك المسجل."
+        },
+        {
+          "title": "سجل الاستثناءات",
+          "description": "حصر المراجع الرئيسية المفقودة والقيم غير المنطقية والحالات غير المعروفة مع إجراءات مقترحة للمراجعة."
+        },
+        {
+          "title": "المطابقة والخصوصية",
+          "description": "مطابقة إجماليات المواقع والأسر والسكان، واستبدال معرفات المواقع وإزالة الأسماء والإحداثيات الدقيقة من نسخة العرض."
+        }
+      ],
+      "findings": [
+        "يشمل السجل المنظف 2,348 موقعًا وتجمعًا و306,107 أسر و1,768,189 شخصًا في لقطة أغسطس 2026.",
+        "72.8% من السكان يرتبطون بسجلات ينقصها تاريخ تحقق أو يزيد عمر التحقق فيها على سنة، وفق معيار اللقطة.",
+        "غياب تاريخ التقييم الميداني في سجلات تمثل 40.5% من السكان، وعدم تسجيل شريك في سجلات تمثل 76.3% منهم؛ والفراغ لا يثبت غياب المساعدة.",
+        "صحح التحليل إجمالي أسر المواقع الرئيسية من 298,730 إلى 299,862 أسرة؛ فرق 1,132 أسرة ناتج عن قيم مخزنة كنص."
+      ],
+      "controls": [
+        "مطابقة إجمالي 2,348 سجلًا و306,107 أسر و1,768,189 شخصًا بنتائج مستقلة داخل المصنف.",
+        "لا توجد معرفات مجهولة مكررة، مع توثيق مرجعين رئيسيين غير موجودين.",
+        "تمييز ست حالات تتجاوز فيها النسبة 15 شخصًا لكل أسرة، و257 حالة موقع غير معروفة بدل تجاهلها.",
+        "النسخة العامة لا تعرض أسماء المواقع الدقيقة أو الإحداثيات أو التعليقات الميدانية الحساسة."
+      ],
+      "gallery": [
+        {
+          "src": "/images/excel-projects/idp-exceptions.png",
+          "title": "سجل استثناءات جودة البيانات",
+          "description": "الأخطاء المحددة حسب الموقع ونوع المشكلة والإجراء المقترح."
+        },
+        {
+          "src": "/images/excel-projects/idp-reconciliation.png",
+          "title": "المطابقة ومسار التدقيق",
+          "description": "مقارنة المجاميع بعد التنظيف بالمصدر وتوثيق قواعد المعالجة."
+        }
+      ],
+      "datasetNote": "تحليل لمحفظة أعمال عامة مبنية على لقطة بيانات مواقع النزوح بتاريخ 31 أغسطس 2026 بعد إزالة الأسماء والإحداثيات والتعليقات الدقيقة. الأرقام تصف جودة السجلات والجاهزية التشغيلية في تاريخ اللقطة، ولا تمثل تقييمًا لاحتياجات الأفراد أو دليلًا على غياب المساعدات."
+    },
+    {
+      "slug": "employee-satisfaction",
+      "title": "تحليل رضا الموظفين وتغير التقييمات",
+      "category": "Excel • تحليلات الموارد البشرية",
+      "summary": "تحليل 901 استجابة مجهولة الهوية تعود إلى 277 موظفًا، مع مقارنة التقييم السابق والأحدث لكل موظف وضبط أثر الاستجابات المتكررة.",
+      "challenge": "قد تشوّه استجابات الموظف المتكررة الصورة إذا حُسبت جميعها كأفراد مستقلين، كما أن السجلات القديمة قد تغيّر نسبة التقييمات المنخفضة.",
+      "solution": "الاحتفاظ بجميع الاستجابات للتدقيق، واختيار أحدث استجابة صحيحة لكل موظف باستخدام الطابع الزمني ومعرّف الاستجابة لكسر التعادل، ثم تحليل تغير التقييمات واختبار جودة البيانات.",
+      "preview": "/images/excel-projects/employee-dashboard.png",
+      "previewAlt": "لوحة Excel الأصلية لتحليل رضا الموظفين ومصفوفة تغير التقييمات",
+      "download": "/downloads/employee-satisfaction-analysis.xlsx",
+      "metrics": [
+        {
+          "value": "901",
+          "label": "استجابة"
+        },
+        {
+          "value": "277",
+          "label": "موظفًا في التحليل"
+        },
+        {
+          "value": "240",
+          "label": "موظفًا باستجابات متكررة"
+        },
+        {
+          "value": "91.1%",
+          "label": "استمرار التقييمات المنخفضة سابقًا"
+        }
+      ],
+      "tags": [
+        "Excel",
+        "HR Analytics",
+        "Deduplication",
+        "Data Validation"
+      ],
+      "steps": [
+        {
+          "title": "إخفاء الهوية",
+          "description": "استبدال عناوين البريد بمعرّفات موظفين مجهولة وإبقاء التواريخ والدرجات اللازمة للتحليل."
+        },
+        {
+          "title": "اختيار أحدث استجابة",
+          "description": "ترتيب الاستجابات لكل موظف زمنيًا، واختيار أحدث سجل مع كسر التعادل بأعلى معرّف استجابة."
+        },
+        {
+          "title": "تحليل تغير التقييم",
+          "description": "مقارنة تقييم كل موظف السابق والأخير واستخراج مصفوفة انتقالات من 1 إلى 5."
+        },
+        {
+          "title": "اختبارات ومطابقة",
+          "description": "التحقق من القيم الناقصة والمدى الصحيح للتقييم وتكرار السجلات، ومطابقة المجاميع مع النتائج المستقلة."
+        }
+      ],
+      "findings": [
+        "أنتجت 901 استجابة سجلًا موحدًا لـ277 موظفًا؛ لدى 240 موظفًا أكثر من استجابة واحدة.",
+        "41 من أصل 45 موظفًا كانت درجاتهم السابقة 1 أو 2 ظلوا ضمن التقييمات المنخفضة (91.1%) عند أحدث تقييم.",
+        "من بين 202 موظفًا لهم استجابة خلال السنة السابقة لتاريخ 10 يونيو 2026، سجل 43 موظفًا تقييمًا منخفضًا (21.3%).",
+        "101 موظف لديهم أربع استجابات أو أكثر، وأسهموا بنحو 57.5% من جميع الاستجابات، ما يوضح أهمية ضبط تكرار المشاركة."
+      ],
+      "controls": [
+        "عدم وجود معرّفات موظفين فارغة أو درجات رضا غير صالحة أو طوابع زمنية مفقودة.",
+        "عدم ظهور عناوين البريد الإلكتروني في نسخة المصنف العامة.",
+        "مطابقة 901 استجابة و277 موظفًا فريدًا و240 مستجيبًا مكررًا مع العد المستقل.",
+        "التحليل يفرّق بين أحدث تقييم لكل موظف وجميع الاستجابات التاريخية، ولا يفترض أن التغير يثبت سببًا معينًا."
+      ],
+      "gallery": [
+        {
+          "src": "/images/excel-projects/employee-latest.png",
+          "title": "أحدث سجل لكل موظف",
+          "description": "اختيار أحدث استجابة وعرض تغير الدرجة مع الاحتفاظ بتاريخ الاستجابات."
+        },
+        {
+          "src": "/images/excel-projects/employee-audit.png",
+          "title": "ضوابط جودة البيانات",
+          "description": "اختبارات التحقق والمطابقة وآلية تحديد أحدث استجابة."
+        }
+      ],
+      "datasetNote": "مثال تحليلي يعرض بيانات رضا موظفين مجهولة الهوية بين 9 يناير 2019 و10 يونيو 2026. مقاييس حداثة السجلات محسوبة بالنسبة إلى 10 يونيو 2026، وليست مؤشرات لحظية. أُزيلت عناوين البريد من النسخة العامة؛ النتائج وصفية ولا تكشف هوية الأفراد."
     }
   ],
   en: [
@@ -184,6 +340,162 @@ const projects: Record<ExcelLocale, ExcelProject[]> = {
         { src: "/images/excel-projects/pricing-validation.png", title: "Validation controls", description: "Duplicate-key, missing-price and reconciliation checks." }
       ],
       datasetNote: "Portfolio case using a sample pizza-sales dataset from January–February 2026, not a pharmaceutical company's actual transactions. All price differences concern that example dataset only."
+    },
+    {
+      "slug": "yemen-idp-data-quality",
+      "title": "Yemen IDP Site Data Quality Audit",
+      "category": "Excel • Data Quality • Operational Controls",
+      "summary": "An audit of 2,348 displacement-site records, highlighting validation gaps, outdated verification dates and actionable data-quality exceptions.",
+      "challenge": "Text-formatted quantities, missing verification dates and invalid parent references can distort summaries and decision-making. The task was to evaluate data fitness and make limitations visible.",
+      "solution": "Standardized records, corrected numeric types, assessed record freshness, validated parent–child relationships, reconciled totals and maintained an exception log using anonymized site identifiers.",
+      "preview": "/images/excel-projects/idp-dashboard.png",
+      "previewAlt": "Original Arabic Excel dashboard for IDP site data quality and verification status",
+      "download": "/downloads/yemen-idp-data-quality.xlsx",
+      "metrics": [
+        {
+          "value": "2,348",
+          "label": "Site records"
+        },
+        {
+          "value": "306,107",
+          "label": "Households after cleaning"
+        },
+        {
+          "value": "72.8%",
+          "label": "Population in stale or missing verification records"
+        },
+        {
+          "value": "9",
+          "label": "Text-formatted household values"
+        }
+      ],
+      "tags": [
+        "Excel",
+        "Data Quality",
+        "Exception Register",
+        "Reconciliation"
+      ],
+      "steps": [
+        {
+          "title": "Normalize the source",
+          "description": "Correct text-formatted household counts and standardize site status and classification fields."
+        },
+        {
+          "title": "Assess freshness",
+          "description": "Evaluate verification and assessment dates against the 31 August 2026 snapshot, while distinguishing missing values from negative evidence."
+        },
+        {
+          "title": "Log exceptions",
+          "description": "List unmatched parent references, extreme household ratios and unclassified statuses with suggested follow-up actions."
+        },
+        {
+          "title": "Reconcile and anonymize",
+          "description": "Check totals against independent computations and remove exact site names, coordinates and sensitive comments from the public copy."
+        }
+      ],
+      "findings": [
+        "The cleaned snapshot contains 2,348 site records, 306,107 households and 1,768,189 people as of August 2026.",
+        "72.8% of people fall within records with absent verification dates or dates more than one year old.",
+        "Records representing 40.5% of the population lack a field-assessment date; 76.3% lack a recorded partner, which does not establish the absence of assistance.",
+        "Converting text-formatted household counts corrected the main-site household total from 298,730 to 299,862 — a difference of 1,132."
+      ],
+      "controls": [
+        "All 2,348 records, 306,107 households and 1,768,189 people reconcile against independent totals.",
+        "No duplicate anonymized site IDs; two missing parent references remain explicitly flagged.",
+        "Six records exceed 15 people per household and 257 site statuses remain unknown and marked for review.",
+        "Exact site names, locations, coordinates and sensitive field comments are excluded from the public workbook."
+      ],
+      "gallery": [
+        {
+          "src": "/images/excel-projects/idp-exceptions.png",
+          "title": "Data-quality exception register",
+          "description": "Site-level anomalies, priorities and recommended follow-up actions."
+        },
+        {
+          "src": "/images/excel-projects/idp-reconciliation.png",
+          "title": "Reconciliation and methodology",
+          "description": "Comparisons between source totals, cleaned totals and documented processing rules."
+        }
+      ],
+      "datasetNote": "Portfolio analysis of an anonymized Yemen displacement-site dataset snapshot dated 31 August 2026. Exact site names, coordinates and sensitive comments were excluded. The figures assess record quality and operational data readiness, not individual needs or confirmed aid availability."
+    },
+    {
+      "slug": "employee-satisfaction",
+      "title": "Employee Satisfaction & Rating Trends",
+      "category": "Excel • HR Analytics",
+      "summary": "Anonymized analysis of 901 survey responses from 277 employees, comparing the latest and preceding ratings without double-counting repeated responses.",
+      "challenge": "Employees can respond multiple times, inflating aggregated counts and obscuring changes in sentiment. Older responses can also bias the current picture.",
+      "solution": "Retained the full response history, selected each employee's latest valid timestamped response, resolved timestamp ties by response ID, analyzed rating transitions and reconciled key counts.",
+      "preview": "/images/excel-projects/employee-dashboard.png",
+      "previewAlt": "Original Excel employee satisfaction dashboard showing rating transitions and response history",
+      "download": "/downloads/employee-satisfaction-analysis.xlsx",
+      "metrics": [
+        {
+          "value": "901",
+          "label": "Responses"
+        },
+        {
+          "value": "277",
+          "label": "Employees analyzed"
+        },
+        {
+          "value": "240",
+          "label": "Repeat respondents"
+        },
+        {
+          "value": "91.1%",
+          "label": "Previously low ratings staying low"
+        }
+      ],
+      "tags": [
+        "Excel",
+        "HR Analytics",
+        "Deduplication",
+        "Data Validation"
+      ],
+      "steps": [
+        {
+          "title": "Anonymize identities",
+          "description": "Replace employee email addresses with anonymous IDs while retaining time and rating information."
+        },
+        {
+          "title": "Select latest responses",
+          "description": "Sort employee submissions by timestamp and resolve exact ties using the highest response ID."
+        },
+        {
+          "title": "Track rating changes",
+          "description": "Compare previous and latest scores for each employee and build a 1–5 transition matrix."
+        },
+        {
+          "title": "Run quality checks",
+          "description": "Check missing identifiers, invalid scores, missing timestamps and independent totals."
+        }
+      ],
+      "findings": [
+        "901 survey submissions correspond to 277 distinct employees; 240 submitted multiple responses.",
+        "41 of 45 employees whose preceding rating was 1 or 2 remained at a low score in their latest response (91.1%).",
+        "Among 202 employees with a response during the year before 10 June 2026, 43 gave a low rating (21.3%).",
+        "101 employees submitted at least four responses and accounted for approximately 57.5% of all submissions."
+      ],
+      "controls": [
+        "No missing employee IDs, invalid satisfaction ratings or missing timestamps in the prepared analysis.",
+        "No email addresses are exposed in the public workbook.",
+        "901 submissions, 277 unique employees and 240 repeat respondents reconcile to independent checks.",
+        "Latest-per-employee results are distinguished from all historical responses; descriptive changes do not establish causation."
+      ],
+      "gallery": [
+        {
+          "src": "/images/excel-projects/employee-latest.png",
+          "title": "Latest response per employee",
+          "description": "Previous-to-latest ratings and recency indicators with anonymized employee IDs."
+        },
+        {
+          "src": "/images/excel-projects/employee-audit.png",
+          "title": "Data quality controls",
+          "description": "Validation checks, reconciled totals and the latest-response selection rule."
+        }
+      ],
+      "datasetNote": "An anonymized survey portfolio analysis spanning 9 January 2019 to 10 June 2026. Recency metrics use 10 June 2026 as the reference date, not the current date. Emails are removed from the public version; findings are descriptive and do not identify individuals."
     }
   ]
 };

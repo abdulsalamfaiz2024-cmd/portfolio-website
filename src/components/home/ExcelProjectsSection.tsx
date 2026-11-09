@@ -23,8 +23,8 @@ export function ExcelProjectsSection({ lang }: { lang: ExcelLocale }) {
             </h2>
             <p className="max-w-2xl text-sm leading-6 text-slate-600">
               {arabic
-                ? "نماذج عملية لتحليل المبيعات وتدقيق الأسعار، مع دراسات حالة وملفات Excel قابلة للتنزيل."
-                : "Practical sales analysis and pricing audit examples, with case studies and downloadable Excel workbooks."}
+                ? "أربعة نماذج عملية في المبيعات والتدقيق وجودة البيانات وتحليل رضا الموظفين، مع ملفات Excel قابلة للتنزيل."
+                : "Four practical samples spanning sales, audit controls, data quality and employee analytics, with downloadable Excel files."}
             </p>
           </div>
         </FadeIn>
@@ -89,8 +89,8 @@ export function ExcelProjectsSection({ lang }: { lang: ExcelLocale }) {
         <p className="mt-5 flex items-start gap-2 text-xs leading-5 text-slate-500">
           <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-700" aria-hidden="true" />
           {arabic
-            ? "نماذج مبنية على بيانات تدريبية؛ لا تتضمن بيانات عملاء أو معلومات تشغيلية سرية."
-            : "Sample datasets only; no confidential client or operational records."}
+            ? "نماذج تدريبية وتحليلات لبيانات عامة أو مجهولة الهوية؛ لا تتضمن بيانات عملاء أو معلومات تشغيلية سرية."
+            : "Sample, public-source or anonymized datasets; no confidential client or operational records."}
         </p>
       </div>
     </section>

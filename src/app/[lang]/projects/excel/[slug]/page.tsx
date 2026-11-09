@@ -56,7 +56,9 @@ export default async function ExcelProjectPage({ params }: Props) {
         source: "About the source data", next: "Explore another project",
       };
 
-  const otherProject = getExcelProjects(lang).find((item) => item.slug !== project.slug);
+  const allProjects = getExcelProjects(lang);
+  const currentIndex = allProjects.findIndex((item) => item.slug === project.slug);
+  const otherProject = allProjects[(currentIndex + 1) % allProjects.length];
 
   return (
     <div className="min-h-screen bg-white text-slate-900">

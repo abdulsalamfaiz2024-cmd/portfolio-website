@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English pages
     { url: `${baseUrl}/en/projects/excel/sales-performance`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/en/projects/excel/effective-date-pricing`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/en/projects/excel/yemen-idp-data-quality`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/en/projects/excel/employee-satisfaction`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/en`, lastModified, changeFrequency: 'monthly', priority: 1.0 },
     { url: `${baseUrl}/en/projects/phonixpro`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/en/projects/yemen-nexus`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
@@ -18,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Arabic pages
     { url: `${baseUrl}/ar/projects/excel/sales-performance`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/ar/projects/excel/effective-date-pricing`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/ar/projects/excel/yemen-idp-data-quality`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/ar/projects/excel/employee-satisfaction`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/ar`, lastModified, changeFrequency: 'monthly', priority: 1.0 },
     { url: `${baseUrl}/ar/projects/phonixpro`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/ar/projects/yemen-nexus`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
