@@ -1,32 +1,56 @@
 [
   {
     "id": "phonixpro",
-    "title": "AI-Powered Data Analysis Platform",
+    "title": "Data Analysis & Reporting Platform",
     "category": "Cloud Analytics Platform",
     "featured": true,
     "image": "/images/projects/phonixpro.png",
-    "objective": "Build a cloud platform for data analysis, interactive charts, and automated reporting — reducing manual analyst work.",
-    "solution": "Built an in-memory SaaS tool with real-time processing, natural language querying via Gemini AI, interactive chart generation, and automated PDF report export. Built with Next.js, Python, and Redis.",
-    "impact": "Allowed non-technical users to run data analysis through conversational AI, cutting the time from question to answer from hours to minutes.",
-    "techStack": ["Next.js", "Python", "Redis", "PostgreSQL", "Gemini AI"],
+    "objective": "Build a web platform for data analysis, interactive charts and automated reports with less manual processing.",
+    "solution": "Developed an in-memory SaaS data workspace with natural-language querying, interactive visualizations and PDF reports using Next.js, Python and Redis.",
+    "impact": "A natural-language query interface makes it easier to explore datasets and retrieve statistics without writing complex queries.",
+    "techStack": [
+      "Next.js",
+      "Python",
+      "Redis",
+      "PostgreSQL",
+      "Language Interfaces"
+    ],
     "metrics": [
-      { "value": "70%", "label": "Reduction in analysis time" },
-      { "value": "<50ms", "label": "Average query response" }
+      {
+        "value": "70%",
+        "label": "Reduction in analysis time"
+      },
+      {
+        "value": "<50ms",
+        "label": "Average query response"
+      }
     ]
   },
   {
     "id": "podcast-extractor",
-    "title": "Podcast AI-ETL Pipeline",
-    "category": "AI Automation",
+    "title": "Podcast Transcription & ETL Pipeline",
+    "category": "Audio Processing & Automation",
     "featured": false,
     "image": "/images/projects/text-extractor.png",
-    "objective": "Automate the processing of large video files, converting hours of footage into searchable, timestamped text using local and cloud AI.",
-    "solution": "Built a Python application using open-source speech-to-text models for transcription, with NLP post-processing for speaker identification and topic segmentation.",
+    "objective": "Automate the conversion of audio and video into searchable, timestamped transcripts with structured content.",
+    "solution": "Developed a Python processing pipeline to extract audio, transcribe speech, refine text and identify speakers.",
     "impact": "Cut manual video processing time by over 80%, making content searchable and indexed.",
-    "techStack": ["Python", "AI/ML", "NLP", "Speech-to-Text"],
+    "techStack": [
+      "Python",
+      "FFmpeg",
+      "Whisper",
+      "NLP",
+      "Speech-to-Text"
+    ],
     "metrics": [
-      { "value": "80%+", "label": "Processing time saved" },
-      { "value": "AI", "label": "Automated transcription" }
+      {
+        "value": "80%+",
+        "label": "Processing time saved"
+      },
+      {
+        "value": "Text",
+        "label": "Automated transcription"
+      }
     ]
   },
   {
@@ -38,10 +62,22 @@
     "objective": "Bring together scattered data across sectors — economy, health, weather — into one real-time dashboard for decision-makers in Yemen.",
     "solution": "Built automated ETL pipelines to pull data from multiple APIs and public sources, with interactive Power BI dashboards including drill-down views and row-level security for different stakeholders.",
     "impact": "Replaced scattered data sources with a single dashboard, helping programme leadership make faster, evidence-based decisions.",
-    "techStack": ["Python", "Power BI", "REST APIs", "SQL Server", "Azure"],
+    "techStack": [
+      "Python",
+      "Power BI",
+      "REST APIs",
+      "SQL Server",
+      "Azure"
+    ],
     "metrics": [
-      { "value": "5+", "label": "Data sectors integrated" },
-      { "value": "Real-time", "label": "Dashboard updates" }
+      {
+        "value": "5+",
+        "label": "Data sectors integrated"
+      },
+      {
+        "value": "Real-time",
+        "label": "Dashboard updates"
+      }
     ]
   },
   {
@@ -53,10 +89,21 @@
     "objective": "Move TNSC from unorganized spreadsheets to a structured relational database for daily business operations.",
     "solution": "Designed a normalized database schema with proper entity relationships, data integrity rules, and migration scripts. Replaced ad-hoc Excel workflows with SQL-based data access and reporting.",
     "impact": "Gave the business one reliable place for its data, improved data accuracy, and made automated reporting possible.",
-    "techStack": ["PostgreSQL", "SQL", "Python", "Database Design"],
+    "techStack": [
+      "PostgreSQL",
+      "SQL",
+      "Python",
+      "Database Design"
+    ],
     "metrics": [
-      { "value": "100%", "label": "Data centralization" },
-      { "value": "Scalable", "label": "Enterprise-ready architecture" }
+      {
+        "value": "100%",
+        "label": "Data centralization"
+      },
+      {
+        "value": "Scalable",
+        "label": "Enterprise-ready architecture"
+      }
     ]
   }
 ]

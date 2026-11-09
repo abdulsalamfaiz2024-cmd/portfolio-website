@@ -23,7 +23,6 @@ import {
   Activity,
   MapPin,
   BarChart3,
-  Brain,
   Bell,
   Server,
   FileSearch,
@@ -114,7 +113,7 @@ const content = {
     roadmapTitle: "Future Roadmap",
     roadmapDesc: "From monitoring to foresight — upcoming capabilities.",
     roadmap: [
-      { icon: Brain, title: "AI Integration", desc: "Training predictive models on historical data to forecast currency trajectories and humanitarian needs." },
+      { icon: BarChart3, title: "Predictive Analysis", desc: "Developing forecasting models from historical exchange rates and humanitarian indicators." },
       { icon: Bell, title: "Smart Alerts", desc: "Risk-threshold notification system to alert decision-makers of pandemic outbreaks or sudden economic collapses." }
     ],
     ctaTitle: "Interested in learning more?",
@@ -204,7 +203,7 @@ const content = {
     roadmapTitle: "خارطة الطريق المستقبلية",
     roadmapDesc: "من المراقبة إلى الاستشراف — قدرات قيد التطوير.",
     roadmap: [
-      { icon: Brain, title: "دمج الذكاء الاصطناعي", desc: "تدريب النماذج التنبؤية على البيانات التاريخية لتوقع مسارات العملة والاحتياجات الإنسانية." },
+      { icon: BarChart3, title: "التحليل التنبؤي", desc: "تطوير نماذج توقع تعتمد على البيانات التاريخية لأسعار الصرف والمؤشرات الإنسانية." },
       { icon: Bell, title: "التنبيهات الذكية", desc: "نظام إشعار بمستويات الخطر لتنبيه صانعي القرار باحتمالية تفشي الأوبئة أو الانهيارات الاقتصادية المفاجئة." }
     ],
     ctaTitle: "مهتم بمعرفة المزيد؟",

@@ -10,7 +10,6 @@ import {
   Upload,
   AudioLines,
   MessageSquareText,
-  Sparkles,
   Clapperboard,
   Archive,
   SplitSquareHorizontal,
@@ -30,22 +29,22 @@ import { useEffect, useState } from "react";
 const content = {
   en: {
     back: "Back to Projects",
-    title: "Podcast AI-ETL Pipeline",
-    subtitle: "Automated NLP Pipeline for Digital Production & Intelligent Archiving",
+    title: "Podcast Transcription & ETL Pipeline",
+    subtitle: "Audio Transcription and Searchable Content Archive",
     metrics: [
       { value: "80%+", label: "Processing time saved" },
-      { value: "Hybrid AI", label: "Local + Cloud inference" },
+      { value: "Hybrid", label: "Local + Cloud inference" },
       { value: "10-min", label: "Smart chunking blocks" },
     ],
     tocTitle: "On this page",
     tocSections: [
       { id: "overview", label: "Overview" },
       { id: "value", label: "Value Proposition" },
-      { id: "architecture", label: "Hybrid AI Architecture" },
+      { id: "architecture", label: "Processing Architecture" },
       { id: "code-highlights", label: "Code Highlights" },
       { id: "workflow", label: "Automation Workflow" },
     ],
-    tags: ["AI Automation", "NLP", "Audio Processing", "ETL", "Python"],
+    tags: ["Audio Automation", "NLP", "Audio Processing", "ETL", "Python"],
     overviewTitle: "Project Overview",
     overviewText: "Developed for the \"Third Sector Podcast\" (NGOs Yemen), this project addresses the bottleneck of manual transcription for long-form video content. I engineered a custom \"Digital Production Pipeline\" (ETL) that automates the ingestion of large video files, converting hours of footage into precise, searchable, and timestamped text to streamline post-production and social media marketing.",
     dashboardCaption: "Dashboard interface — English & Arabic (RTL) versions",
@@ -54,7 +53,7 @@ const content = {
     features: [
       {
         icon: Clapperboard,
-        title: "Smart Content Creation",
+        title: "Transcript-Based Content Editing",
         subtitle: "Reels & Shorts Optimization",
         desc: "Generates transcripts with high-precision timestamps and speaker identification. Empowers editing teams to instantly locate \"golden moments\" for promotional clips without manual review.",
         benefitIcon: Clock,
@@ -77,7 +76,7 @@ const content = {
       {
         icon: SplitSquareHorizontal,
         title: "Optimized Large-Scale Processing",
-        desc: "Implements a \"Smart Chunking\" algorithm that segments massive files into 10-minute blocks, preventing memory overloads and ensuring 100% data integrity during long-form episodes.",
+        desc: "Implements a \"File Chunking\" algorithm that segments massive files into 10-minute blocks, preventing memory overloads and ensuring 100% data integrity during long-form episodes.",
         benefits: [
           { icon: HardDrive, text: "Zero memory overflows" },
           { icon: CheckCircle2, text: "100% data integrity" }
@@ -87,16 +86,16 @@ const content = {
       }
     ],
     archTitle: "Technical Architecture",
-    archSubtitle: "The Hybrid AI Approach — balancing privacy, speed, and cost with a dual-layer inference strategy.",
+    archSubtitle: "Local transcription and cloud text refinement, with attention to privacy, speed and cost.",
     localEngine: {
       title: "Local Inference Engine",
-      desc: "Powered by OpenAI Whisper (Faster-Whisper) running locally for raw transcription — eliminating cloud costs and ensuring data privacy.",
+      desc: "Powered by Faster-Whisper running locally for raw transcription — eliminating cloud costs and ensuring data privacy.",
       tags: [{ icon: Shield, text: "Privacy-first" }, { icon: Zap, text: "Zero cloud cost" }]
     },
     cloudEngine: {
       title: "Cloud Refinement Layer",
-      desc: "Google Gemini 1.5 Pro API acts as an intelligent editor — correcting grammar and distinguishing between \"Host\" and \"Guest\" dialogue.",
-      tags: [{ icon: Sparkles, text: "Context-aware" }, { icon: MessageSquareText, text: "Speaker ID" }]
+      desc: "A cloud language service acts as a text reviewer — correcting grammar and distinguishing between \"Host\" and \"Guest\" dialogue.",
+      tags: [{ icon: MessageSquareText, text: "Context-aware" }, { icon: MessageSquareText, text: "Speaker ID" }]
     },
     coreStackTitle: "Core Stack",
     coreStackTags: ["Python", "FFmpeg", "Faster-Whisper", "Gemini 1.5 Pro", "PCM 16kHz"],
@@ -105,8 +104,8 @@ const content = {
     workflowSteps: [
       { step: 1, icon: Upload, title: "Ingestion", detail: "Accepts raw video files (MP4 / MOV) via drag-and-drop upload.", color: "bg-blue-50 border-blue-100 text-blue-500" },
       { step: 2, icon: AudioLines, title: "Optimization", detail: "Isolates and optimizes audio tracks via FFmpeg (PCM 16 kHz).", color: "bg-amber-50 border-amber-100 text-amber-500" },
-      { step: 3, icon: MessageSquareText, title: "Transcription", detail: "Local Whisper AI converts audio chunks to timestamped text.", color: "bg-violet-50 border-violet-100 text-violet-500" },
-      { step: 4, icon: Sparkles, title: "AI Polishing", detail: "Cloud Gemini merges, formats, and refines the final transcript.", color: "bg-emerald-50 border-emerald-100 text-emerald-500" },
+      { step: 3, icon: MessageSquareText, title: "Transcription", detail: "Local speech recognition converts audio chunks to timestamped text.", color: "bg-violet-50 border-violet-100 text-violet-500" },
+      { step: 4, icon: MessageSquareText, title: "Text Refinement", detail: "The cloud processing stage merges, formats and refines the final transcript.", color: "bg-emerald-50 border-emerald-100 text-emerald-500" },
     ],
     ctaTitle: "Interested in learning more?",
     ctaDesc: "Get in touch to discuss this project or explore collaboration.",
@@ -116,12 +115,12 @@ const content = {
   },
   ar: {
     back: "العودة للمشاريع",
-    title: "مسار الذكاء الاصطناعي للبودكاست",
-    subtitle: "مسار معالجة لغات طبيعية مؤتمت للإنتاج الرقمي والأرشفة الذكية",
+    title: "أتمتة تفريغ البودكاست ومعالجة النصوص",
+    subtitle: "تحويل التسجيلات الصوتية إلى نصوص قابلة للبحث والأرشفة",
     metrics: [
       { value: "80%+", label: "توفير في وقت المعالجة" },
       { value: "هجين", label: "معالجة محلية وسحابية" },
-      { value: "10-min", label: "تجزئة ذكية للملفات" },
+      { value: "10-min", label: "تجزئة منظمة للملفات" },
     ],
     tocTitle: "في هذه الصفحة",
     tocSections: [
@@ -131,7 +130,7 @@ const content = {
       { id: "code-highlights", label: "من الكود" },
       { id: "workflow", label: "سير عمل الأتمتة" },
     ],
-    tags: ["أتمتة الذكاء الاصطناعي", "معالجة اللغات الطبيعية", "معالجة الصوت", "ETL", "بايثون"],
+    tags: ["أتمتة معالجة الصوت", "معالجة اللغات الطبيعية", "معالجة الصوت", "ETL", "بايثون"],
     overviewTitle: "نظرة عامة على المشروع",
     overviewText: "تم تطوير هذا المشروع لصالح \"بودكاست القطاع الثالث\" (المنظمات غير الحكومية في اليمن) لمعالجة مشكلة النسخ اليدوي البطيء لمحتوى الفيديو الطويل. قمت بهندسة \"مسار إنتاج رقمي\" (ETL) مخصص يقوم بأتمتة استيعاب ملفات الفيديو الكبيرة، وتحويل ساعات من اللقطات إلى نص دقيق وقابل للبحث ومزود بطوابع زمنية لتسهيل عمليات المونتاج والتسويق عبر وسائل التواصل الاجتماعي.",
     dashboardCaption: "واجهة لوحة التحكم — النسختين الإنجليزية والعربية",
@@ -140,7 +139,7 @@ const content = {
     features: [
       {
         icon: Clapperboard,
-        title: "إنشاء محتوى ذكي",
+        title: "إعداد محتوى من التسجيلات",
         subtitle: "تحسين إنتاج مقاطع الريلز والشورتس",
         desc: "ينشئ نصوصاً بطوابع زمنية عالية الدقة وتحديد للمتحدثين. يمكّن فرق المونتاج من تحديد \"اللحظات الذهبية\" فوراً للمقاطع الترويجية دون الحاجة للمراجعة اليدوية.",
         benefitIcon: Clock,
@@ -163,7 +162,7 @@ const content = {
       {
         icon: SplitSquareHorizontal,
         title: "معالجة محسنة للملفات الضخمة",
-        desc: "ينفذ خوارزمية \"تجزئة ذكية\" تقسم الملفات الضخمة إلى كتل مدتها 10 دقائق، مما يمنع التحميل الزائد على الذاكرة ويضمن سلامة البيانات بنسبة 100٪ خلال الحلقات الطويلة.",
+        desc: "ينفذ خوارزمية \"تجزئة منظمة\" تقسم الملفات الضخمة إلى كتل مدتها 10 دقائق، مما يمنع التحميل الزائد على الذاكرة ويضمن سلامة البيانات بنسبة 100٪ خلال الحلقات الطويلة.",
         benefits: [
           { icon: HardDrive, text: "انعدام مشاكل امتلاء الذاكرة" },
           { icon: CheckCircle2, text: "سلامة البيانات بنسبة 100٪" }
@@ -173,16 +172,16 @@ const content = {
       }
     ],
     archTitle: "البنية الفنية والتقنية",
-    archSubtitle: "نهج الذكاء الاصطناعي الهجين — الموازنة بين الخصوصية، السرعة، والتكلفة عبر استراتيجية استنتاج ثنائية الطبقات.",
+    archSubtitle: "تفريغ صوتي محلي ثم تنقيح نصي سحابي لتحقيق التوازن بين الخصوصية والسرعة والتكلفة.",
     localEngine: {
       title: "محرك الاستنتاج المحلي",
-      desc: "يعمل بنظام OpenAI Whisper (النسخة الأسرع) محلياً للنسخ الصوتي الخام — مما يزيل التكاليف السحابية ويضمن الخصوصية التامة للبيانات.",
+      desc: "يعمل بنظام Faster-Whisper محلياً للنسخ الصوتي الخام — مما يزيل التكاليف السحابية ويضمن الخصوصية التامة للبيانات.",
       tags: [{ icon: Shield, text: "الأولوية للخصوصية" }, { icon: Zap, text: "صفر تكاليف سحابية" }]
     },
     cloudEngine: {
       title: "طبقة التحسين السحابية",
-      desc: "تعمل واجهة برمجة تطبيقات Google Gemini 1.5 Pro كمحرر ذكي — لتصحيح القواعد اللغوية والتمييز بين حوار \"المضيف\" و \"الضيف\".",
-      tags: [{ icon: Sparkles, text: "إدراك السياق" }, { icon: MessageSquareText, text: "تحديد المتحدثين" }]
+      desc: "تستخدم طبقة التنقيح خدمة لغوية سحابية — لتصحيح القواعد اللغوية والتمييز بين حوار \"المضيف\" و \"الضيف\".",
+      tags: [{ icon: MessageSquareText, text: "إدراك السياق" }, { icon: MessageSquareText, text: "تحديد المتحدثين" }]
     },
     coreStackTitle: "التقنيات الأساسية",
     coreStackTags: ["بايثون", "FFmpeg", "Faster-Whisper", "Gemini 1.5 Pro", "PCM 16kHz"],
@@ -192,7 +191,7 @@ const content = {
       { step: 1, icon: Upload, title: "الإدخال", detail: "استقبال ملفات الفيديو الخام عبر السحب والإفلات.", color: "bg-blue-50 border-blue-100 text-blue-500" },
       { step: 2, icon: AudioLines, title: "التحسين", detail: "عزل مسارات الصوت وتحسينها عبر FFmpeg.", color: "bg-amber-50 border-amber-100 text-amber-500" },
       { step: 3, icon: MessageSquareText, title: "النسخ الصوتي", detail: "محرك Whisper يحول الصوتيات إلى نصوص.", color: "bg-violet-50 border-violet-100 text-violet-500" },
-      { step: 4, icon: Sparkles, title: "التنقيح الذكي", detail: "يقوم نموذج Gemini السحابي بدمج وتنسيق النص النهائي.", color: "bg-emerald-50 border-emerald-100 text-emerald-500" },
+      { step: 4, icon: MessageSquareText, title: "تنقيح النص", detail: "تدمج طبقة المعالجة السحابية الأجزاء وتنسق النص النهائي.", color: "bg-emerald-50 border-emerald-100 text-emerald-500" },
     ],
     ctaTitle: "مهتم بمعرفة المزيد؟",
     ctaDesc: "تواصل معي لمناقشة هذا المشروع أو استكشاف فرص التعاون.",
@@ -521,11 +520,11 @@ export default function PodcastEtlCaseStudy() {
                     </pre>
                   </div>
 
-                  {/* Snippet 2: Smart Chunking + Buffer Logic */}
+                  {/* Snippet 2: File Chunking + Buffer Logic */}
                   <div className="rounded-xl border border-slate-200 overflow-hidden">
                     <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
                       <span className="text-xs font-mono text-slate-400">
-                        {lang === 'ar' ? 'التجزئة الذكية — منطق التخزين المؤقت للطوابع الزمنية' : 'Smart Chunking — Timestamp buffer logic'}
+                        {lang === 'ar' ? 'التجزئة الذكية — منطق التخزين المؤقت للطوابع الزمنية' : 'File Chunking — Timestamp buffer logic'}
                       </span>
                       <span className="text-[0.625rem] font-mono text-slate-500">production_factory.py</span>
                     </div>
@@ -555,7 +554,7 @@ for seg in segments:
                   <div className="rounded-xl border border-slate-200 overflow-hidden">
                     <div className="bg-slate-800 px-4 py-2.5 flex items-center justify-between">
                       <span className="text-xs font-mono text-slate-400">
-                        {lang === 'ar' ? 'تنقيح بالذكاء الاصطناعي — Gemini مع إعادة المحاولة' : 'AI Polishing — Gemini with retry loop'}
+                        {lang === 'ar' ? 'تنقيح النص مع إعادة المحاولة' : 'Text refinement with retry'}
                       </span>
                       <span className="text-[0.625rem] font-mono text-slate-500">polish_transcript.py</span>
                     </div>

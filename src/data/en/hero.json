@@ -3,7 +3,7 @@
   "headline": "Data Analyst & Data Engineer",
   "headlineAccent": "Data Analyst",
   "headlineSuffix": "engineering solutions for clearer business insights",
-  "subheadline": "Data Analyst with a background in data engineering and automation, focused on evaluating performance across commercial sales and humanitarian projects. I define KPIs, build data pipelines, and automate reporting workflows using Python, SQL, Power BI, and SAP ERP. I use AI tools where they add clear value, and my work supports day-to-day operations and leadership reporting.",
+  "subheadline": "Data analyst working across commercial operations and humanitarian programs. I use Excel, Power BI, SQL and Python to organize data, prepare reports, track performance and improve business processes.",
   "competencies": [
     {
       "icon": "Database",
@@ -21,9 +21,9 @@
       "description": "Results-Oriented Monitoring (ROM), UNOPS project data, and reporting across humanitarian sectors."
     },
     {
-      "icon": "BrainCircuit",
-      "label": "AI & Automation",
-      "description": "Open-source AI models, NLP pipelines, document processing, and workflow automation saving 8–12 hours weekly."
+      "icon": "Workflow",
+      "label": "Process Automation",
+      "description": "Document processing, data preparation and automation of repetitive workflows using Python."
     }
   ]
 }

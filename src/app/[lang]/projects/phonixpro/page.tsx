@@ -8,10 +8,8 @@ import {
   ArrowLeft,
   ArrowRight,
   Upload,
-  Sparkles,
   BarChart3,
   PieChart,
-  Brain,
   FileText,
   Rocket,
   Users,
@@ -31,7 +29,7 @@ const content = {
   en: {
     back: "Back to Projects",
     title: "PhonixPro",
-    subtitle: "AI-Driven SaaS Data Analysis & Reporting Platform",
+    subtitle: "SaaS Platform for Data Analysis & Reporting",
     metrics: [
       { value: "70%", label: "Reduction in analysis time" },
       { value: "<50ms", label: "Average query response" },
@@ -43,13 +41,13 @@ const content = {
       { id: "audience", label: "Target Audience" },
       { id: "architecture", label: "Architecture & Stack" },
       { id: "features", label: "Core Features" },
-      { id: "ai-capabilities", label: "AI Capabilities" },
+      { id: "ai-capabilities", label: "Data Assistance Tools" },
       { id: "reporting", label: "Automated Reporting" },
       { id: "roadmap", label: "Upcoming Updates" },
     ],
-    tags: ["SaaS", "AI", "Data Engineering", "Analytics", "Machine Learning"],
+    tags: ["SaaS", "Data Engineering", "Analytics", "Statistical Modeling"],
     overviewTitle: "Project Overview",
-    overviewText: "PhonixPro is a modern web-based SaaS platform designed for advanced data analysis, statistical modeling, and AI-driven insights. Transitioning from a local desktop application to a scalable SaaS, it features a unique high-performance in-memory processing architecture, operating without a persistent backend database to ensure absolute data privacy and rapid processing speeds.",
+    overviewText: "PhonixPro is a modern web-based SaaS platform designed for advanced data analysis, statistical modeling, and practical business reporting. Transitioning from a local desktop application to a scalable SaaS, it features a unique high-performance in-memory processing architecture, operating without a persistent backend database to ensure absolute data privacy and rapid processing speeds.",
     privacyTitle: "Privacy-First Architecture",
     privacyText: "All data is processed in-memory with zero persistent storage — no database, no data retention. Your datasets stay yours.",
     audienceTitle: "Target Audience",
@@ -62,7 +60,7 @@ const content = {
     techStack: [
       { layer: "Frontend", detail: "Modern web UI (SPA)" },
       { layer: "Backend & Engine", detail: "Modular API with Data Science Engine (Statistical + ML toolkit)" },
-      { layer: "AI Integration", detail: "Generative AI for automated interpretation & NL querying" },
+      { layer: "Natural-Language Queries", detail: "Query datasets and generate readable summaries using language interfaces" },
       { layer: "Export Engines", detail: "Document export capabilities (PDF & Word)" },
     ],
     featuresTitle: "Core Modules & Features",
@@ -74,8 +72,8 @@ const content = {
         screenshots: ["ingestion-upload-zone.png", "ingestion-delimiter-preview.png", "ingestion-browser-preview.png"],
       },
       {
-        icon: Sparkles, number: "02", title: "Comprehensive Data Cleaning",
-        description: "An intelligent data preparation hub featuring an AI-powered smart suggestions panel for one-click anomaly fixes, missing value handling, and smart type detection.",
+        icon: Layers, number: "02", title: "Comprehensive Data Cleaning",
+        description: "Data preparation tools for handling anomalies, missing values and inconsistent data types, with guided suggestions for common corrections.",
         screenshots: ["cleaning-dashboard.png", "cleaning-ai-suggestions.png", "cleaning-manual-toolbox.png"],
       },
       {
@@ -85,12 +83,12 @@ const content = {
       },
       {
         icon: PieChart, number: "04", title: "Interactive Visualizations",
-        description: "Publication-ready charts (Heatmaps, Box plots, Violin, Scatter) with smart chart suggestions based on data types and advanced styling controls.",
+        description: "Publication-ready charts (Heatmaps, Box plots, Violin, Scatter) with chart suggestions based on data types and advanced styling controls.",
         screenshots: ["visualization-grid.png", "visualization-builder.png"],
       },
     ],
-    aiTitle: "AI-Powered Capabilities",
-    aiDesc: "The Virtual Data Assistant — three intelligent modules that transform how you interact with data.",
+    aiTitle: "Data Assistance Tools",
+    aiDesc: "Three ways to review data, prepare summaries and build visual reports.",
     aiCapabilities: [
       {
         icon: UserCheck, title: "Executive Analyst",
@@ -117,7 +115,7 @@ const content = {
     upcomingFeatures: [
       { icon: Layers, title: "Multi-Sheet Support", description: "Handle complex Excel workbooks with multiple sheets seamlessly." },
       { icon: LayoutDashboard, title: "Unified Dashboard", description: "Seamless data flow across modules in a single, cohesive workspace." },
-      { icon: Maximize, title: "Expanded Canvas", description: "Enhanced AI infographics with richer layouts and deeper data narratives." },
+      { icon: Maximize, title: "Expanded Canvas", description: "Expanded infographic layouts with richer layouts and deeper data narratives." },
     ],
     ctaTitle: "Interested in learning more?",
     ctaDesc: "Get in touch to discuss this project or explore collaboration.",
@@ -127,7 +125,7 @@ const content = {
   ar: {
     back: "العودة للمشاريع",
     title: "PhonixPro",
-    subtitle: "منصة برمجيات كخدمة لتحليل البيانات والتقارير مدعومة بالذكاء الاصطناعي",
+    subtitle: "منصة ويب لتحليل البيانات وإنشاء التقارير",
     metrics: [
       { value: "70%", label: "تقليل وقت التحليل" },
       { value: "<50ms", label: "متوسط استجابة الاستعلام" },
@@ -139,13 +137,13 @@ const content = {
       { id: "audience", label: "الجمهور المستهدف" },
       { id: "architecture", label: "البنية والتقنيات" },
       { id: "features", label: "الميزات الأساسية" },
-      { id: "ai-capabilities", label: "قدرات الذكاء الاصطناعي" },
+      { id: "ai-capabilities", label: "أدوات التعامل مع البيانات" },
       { id: "reporting", label: "التقارير المؤتمتة" },
       { id: "roadmap", label: "التحديثات القادمة" },
     ],
-    tags: ["البرمجيات كخدمة", "الذكاء الاصطناعي", "هندسة البيانات", "التحليلات", "تعلم الآلة"],
+    tags: ["البرمجيات كخدمة", "هندسة البيانات", "التحليلات", "النمذجة الإحصائية"],
     overviewTitle: "نظرة عامة على المشروع",
-    overviewText: "PhonixPro هي منصة SaaS حديثة عبر الويب مصممة لتحليل البيانات المتقدم، النمذجة الإحصائية، والرؤى المدعومة بالذكاء الاصطناعي. بعد الانتقال من تطبيق سطح مكتب محلي إلى خدمة سحابية قابلة للتوسع، تتميز ببنية معالجة عالية الأداء في الذاكرة بالكامل (In-Memory)، وتعمل بدون قاعدة بيانات خلفية دائمة لضمان خصوصية البيانات المطلقة وسرعات معالجة هائلة.",
+    overviewText: "PhonixPro هي منصة SaaS حديثة عبر الويب مصممة لتحليل البيانات المتقدم، النمذجة الإحصائية، وإعداد تقارير قابلة للمراجعة. بعد الانتقال من تطبيق سطح مكتب محلي إلى خدمة سحابية قابلة للتوسع، تتميز ببنية معالجة عالية الأداء في الذاكرة بالكامل (In-Memory)، وتعمل بدون قاعدة بيانات خلفية دائمة لضمان خصوصية البيانات المطلقة وسرعات معالجة هائلة.",
     privacyTitle: "بنية قائمة على الخصوصية",
     privacyText: "تتم معالجة جميع البيانات في الذاكرة بصفر تخزين دائم - لا توجد قواعد بيانات، ولا احتفاظ بالبيانات. بياناتك تظل ملكك وحدك.",
     audienceTitle: "الجمهور المستهدف",
@@ -158,20 +156,20 @@ const content = {
     techStack: [
       { layer: "الواجهة الأمامية", detail: "واجهة مستخدم ويب حديثة (تطبيق صفحة واحدة)" },
       { layer: "الخلفية والمحرك", detail: "واجهة برمجة تطبيقات معمارية مع محرك لعلوم البيانات (أدوات إحصائية + تعلم آلة)" },
-      { layer: "تكامل الذكاء الاصطناعي", detail: "ذكاء اصطناعي توليدي للتفسير التلقائي والاستعلام باللغة الطبيعية" },
+      { layer: "الاستعلام باللغة الطبيعية", detail: "استكشاف البيانات وتلخيص النتائج من خلال واجهة لغوية" },
       { layer: "محركات التصدير", detail: "قدرات تصدير المستندات بأسلوب احترافي (PDF و Word)" },
     ],
     featuresTitle: "الوحدات والميزات الأساسية",
     featuresDesc: "مجموعة أدوات شاملة تغطي استيعاب البيانات، التنظيف، التحليل، والتصوير البصري.",
     coreModules: [
       {
-        icon: Upload, number: "01", title: "استيعاب البيانات الذكي",
+        icon: Upload, number: "01", title: "استيراد البيانات",
         description: "رفع عبر السحب والإفلات لملفات CSV، Excel، و JSON مع الكشف التلقائي عن الفواصل وتشفير الملفات.",
         screenshots: ["ingestion-upload-zone.png", "ingestion-delimiter-preview.png", "ingestion-browser-preview.png"],
       },
       {
-        icon: Sparkles, number: "02", title: "تنظيف شامل للبيانات",
-        description: "مركز ذكي لإعداد البيانات يتميز بلوحة اقتراحات مدعومة بالذكاء الاصطناعي لإصلاح الشذوذ بنقرة واحدة، ومعالجة القيم المفقودة، والاكتشاف الذكي لأنواع البيانات.",
+        icon: Layers, number: "02", title: "تنظيف شامل للبيانات",
+        description: "أدوات لتنظيف البيانات ومعالجة القيم المفقودة، وكشف أنواع الحقول واقتراح تصحيحات للمشكلات الشائعة.",
         screenshots: ["cleaning-dashboard.png", "cleaning-ai-suggestions.png", "cleaning-manual-toolbox.png"],
       },
       {
@@ -181,12 +179,12 @@ const content = {
       },
       {
         icon: PieChart, number: "04", title: "تصورات بيانات تفاعلية",
-        description: "رسوم بيانية جاهزة للنشر الأكاديمي مع اقتراحات ذكية للرسوم بناءً على أنواع البيانات وأدوات تحكم متقدمة بالتصميم.",
+        description: "رسوم بيانية جاهزة للنشر الأكاديمي مع اقتراحات للرسوم بناءً على أنواع البيانات وأدوات تحكم متقدمة بالتصميم.",
         screenshots: ["visualization-grid.png", "visualization-builder.png"],
       },
     ],
-    aiTitle: "قدرات مدعومة بالذكاء الاصطناعي",
-    aiDesc: "المساعد الافتراضي للبيانات - ثلاث وحدات ذكية تغير طريقة تفاعلك مع البيانات.",
+    aiTitle: "أدوات استكشاف البيانات",
+    aiDesc: "ثلاث أدوات لتلخيص النتائج وإنشاء الرسوم والتعامل مع البيانات باللغة الطبيعية.",
     aiCapabilities: [
       {
         icon: UserCheck, title: "المحلل التنفيذي",
@@ -213,7 +211,7 @@ const content = {
     upcomingFeatures: [
       { icon: Layers, title: "دعم الأوراق المتعددة", description: "التعامل مع ملفات Excel المعقدة ذات الأوراق المتعددة بسلاسة تامة." },
       { icon: LayoutDashboard, title: "لوحة تحكم موحدة", description: "تدفق سلس للبيانات عبر الوحدات في مساحة عمل واحدة ومتماسكة." },
-      { icon: Maximize, title: "لوحة تصميم موسعة", description: "رسوم إنفوجرافيك محسّنة بالذكاء الاصطناعي بتخطيطات أغنى وسرد أعمق للبيانات." },
+      { icon: Maximize, title: "لوحة تصميم موسعة", description: "رسوم إنفوجرافيك بتخطيطات موسعة بتخطيطات أغنى وسرد أعمق للبيانات." },
     ],
     ctaTitle: "مهتم بمعرفة المزيد؟",
     ctaDesc: "تواصل معي لمناقشة هذا المشروع أو استكشاف فرص التعاون.",
@@ -369,7 +367,7 @@ export default function PhonixProCaseStudy() {
                 <div className="mt-6 rounded-xl bg-slate-50 border border-slate-200 p-6">
                   <div className="flex items-start gap-3">
                     <div className="h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Brain className="h-4 w-4 text-accent" />
+                      <BarChart3 className="h-4 w-4 text-accent" />
                     </div>
                     <div>
                       <p className="font-semibold text-slate-900 text-sm">
@@ -490,7 +488,7 @@ export default function PhonixProCaseStudy() {
             <FadeIn>
               <section id="ai-capabilities" className="mb-12 sm:mb-20 scroll-mt-24">
                 <div className="flex items-center gap-3 mb-2">
-                  <Brain className="h-5 w-5 text-accent" />
+                  <BarChart3 className="h-5 w-5 text-accent" />
                   <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
                     {data.aiTitle}
                   </h2>

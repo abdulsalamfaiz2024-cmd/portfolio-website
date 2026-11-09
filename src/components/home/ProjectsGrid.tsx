@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, ChartNoAxesCombined } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import type { ProjectEntry } from "@/types";
 
@@ -18,11 +18,11 @@ export function ProjectsGrid({ projects, lang = "en" }: ProjectsGridProps) {
         <FadeIn>
           <div className="text-center max-w-2xl mx-auto mb-24">
             <h2 className="text-sm font-bold text-accent uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
-              <Sparkles className="h-4 w-4" />
+              <ChartNoAxesCombined className="h-4 w-4" />
               {lang === 'ar' ? "أعمال مختارة" : "Selected Works"}
             </h2>
             <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">
-              {lang === 'ar' ? "هندسة البيانات والذكاء الاصطناعي" : "Engineering Data & AI"}
+              {lang === 'ar' ? "هندسة البيانات وتحليل الأعمال" : "Data Engineering & Business Analytics"}
             </h3>
             <p className="text-lg text-slate-500 leading-relaxed">
               {lang === 'ar' 
