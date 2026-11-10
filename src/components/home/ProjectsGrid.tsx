@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChartNoAxesCombined } from "lucide-react";
+import { ArrowRight, ChartNoAxesCombined, ExternalLink } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import type { ProjectEntry } from "@/types";
 
@@ -107,7 +107,7 @@ export function ProjectsGrid({ projects, lang = "en" }: ProjectsGridProps) {
 
                     {/* Case study link */}
                     {(project.id === "phonixpro" || project.id === "yemen-nexus" || project.id === "podcast-extractor" || project.id === "tnsc-database") && (
-                      <div>
+                      <div className="flex flex-wrap items-center gap-3">
                         <Link
                           href={`/${lang}/projects/${project.id === "podcast-extractor" ? "podcast-etl" : project.id}`}
                           className="inline-flex items-center gap-2 px-6 py-3.5 bg-slate-900 text-white text-sm font-bold rounded-full hover:bg-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 group"
@@ -115,6 +115,18 @@ export function ProjectsGrid({ projects, lang = "en" }: ProjectsGridProps) {
                           {lang === 'ar' ? "تصفح دراسة الحالة" : "Explore Case Study"}
                           <ArrowRight className={`h-4 w-4 transition-transform ${lang === 'ar' ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
                         </Link>
+                        {project.id === "yemen-nexus" && (
+                          <a
+                            href="https://yemen-crisis-dashboard.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3.5 border border-slate-300 text-slate-800 text-sm font-bold rounded-full hover:border-accent hover:text-accent transition-all duration-300"
+                            aria-label={lang === "ar" ? "عرض لوحة المتابعة الحية في نافذة جديدة" : "Open live Yemen dashboard in a new tab"}
+                          >
+                            {lang === "ar" ? "عرض المشروع المباشر" : "View Live Dashboard"}
+                            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                          </a>
+                        )}
                       </div>
                     )}
                   </div>
